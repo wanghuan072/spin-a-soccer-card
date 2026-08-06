@@ -1,0 +1,19 @@
+.shell {
+  min-height: 100dvh;
+}
+.skipLink {
+  position: fixed;
+  z-index: 100;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: var(--color-bg-deep);
+  background: var(--color-primary);
+  font-weight: 900;
+  transform: translateY(-140%);
+  transition: transform 160ms var(--ease-out);
+}
+.skipLink:focus {
+  transform: translateY(0);
+}

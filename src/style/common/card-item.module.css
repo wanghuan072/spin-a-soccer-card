@@ -1,0 +1,179 @@
+.card {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 11px 4px 11px 4px;
+  overflow: hidden;
+  background: linear-gradient(
+    155deg,
+    var(--color-panel-raised),
+    var(--color-panel)
+  );
+  box-shadow: 0 9px 22px oklch(7% 0.025 245 / 0.28);
+  transition:
+    transform 220ms var(--ease-out),
+    border-color 220ms var(--ease-out);
+}
+.card:hover {
+  border-color: var(--color-blue);
+  transform: translateY(-4px);
+}
+.art {
+  position: relative;
+  display: block;
+  height: 160px;
+  overflow: hidden;
+  background: var(--color-bg-deep);
+}
+.art::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 45%,
+    oklch(12% 0.04 248 / 0.88)
+  );
+  content: "";
+}
+.art img {
+  object-fit: cover;
+  transition: transform 420ms var(--ease-out);
+}
+.card:hover .art img {
+  transform: scale(1.035);
+}
+.rating,
+.rarity {
+  position: absolute;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+.rating {
+  top: 12px;
+  left: 12px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 2px solid var(--color-text);
+  border-radius: 8px 2px;
+  color: var(--color-bg-deep);
+  background: var(--color-gold);
+  font-size: 1.05rem;
+  transform: rotate(-3deg);
+}
+.rarity {
+  right: 10px;
+  bottom: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: var(--color-bg-deep);
+  color: var(--color-gold);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.body {
+  display: grid;
+  gap: 6px;
+  padding: 11px 12px 12px;
+}
+.body h3 {
+  font-size: 1.08rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.body h3 a:hover,
+.body h3 a:focus-visible {
+  color: var(--color-primary);
+}
+.body p {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.body dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 4px 0 0;
+}
+.body dl div {
+  padding-top: 8px;
+  border-top: 1px solid var(--color-border-soft);
+}
+.body dt {
+  color: var(--color-muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+.body dd {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.compact {
+  border-radius: 11px 3px;
+  box-shadow: 0 9px 18px oklch(6% 0.025 245 / 0.42);
+}
+.compact .art {
+  height: 148px;
+}
+.compact .rating {
+  top: 8px;
+  left: 8px;
+  width: 36px;
+  height: 36px;
+  border-width: 1px;
+  font-size: 1rem;
+}
+.compact .rarity {
+  right: 7px;
+  bottom: 7px;
+  padding: 2px 6px;
+  font-size: 0.56rem;
+}
+.compact .body {
+  gap: 3px;
+  padding: 9px;
+}
+.compact .body > :first-child,
+.compact .body p,
+.compact .body dl {
+  display: none;
+}
+.compact .body h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+@media (max-width: 768px) {
+  .art {
+    height: 150px;
+  }
+  .body {
+    padding: 12px;
+  }
+  .body h3 {
+    font-size: 1rem;
+  }
+  .compact .body h3 {
+    font-size: 0.92rem;
+  }
+  .card:not(.compact) .body dl {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .body h3,
+  .compact .body h3 {
+    font-size: 0.95rem;
+    text-transform: none;
+  }
+}

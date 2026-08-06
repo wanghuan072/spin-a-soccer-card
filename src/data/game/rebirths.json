@@ -1,0 +1,209 @@
+[
+  {
+    "slug": "rebirth-1",
+    "level": 1,
+    "title": "Rebirth 1",
+    "requirement": "The exact current Cash and card requirement was not captured in the available footage; read the live Rebirth panel.",
+    "unlocks": [
+      "Rebirth progression is part of the official game loop",
+      "Exact current unlocks remain untranscribed"
+    ],
+    "strategy": "Note the live warning and protect the cards the panel says will be lost before confirming.",
+    "verificationStatus": "official-source",
+    "source": {
+      "label": "Official Roblox game description",
+      "url": "https://games.roblox.com/v1/games?universeIds=9272693470",
+      "observedAt": "2026-08-04",
+      "note": "Official description confirms rebirth progression, not the level-one requirement."
+    },
+    "seo": {
+      "title": "Rebirth 1 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 1 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 1 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 1",
+        "Rebirth 1 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-2",
+    "level": 2,
+    "title": "Rebirth 2 - Older Game Build",
+    "requirement": "March footage shows a $1.00M Cash requirement plus four card slots: one Gold card, two named Legendary cards and one additional Legendary card. Small labels must be rechecked in the live panel.",
+    "unlocks": [
+      "+50% Money",
+      "Toxic Pack",
+      "Shadow Pack",
+      "+1 Card Slot",
+      "Card Bank"
+    ],
+    "strategy": "Use the game version to understand the old progression shape, but never consume cards from a current inventory until the live panel matches every name.",
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Rebirth 2 panel at about 1:40; Cash and unlock icons are readable."
+    },
+    "seo": {
+      "title": "Rebirth 2 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 2 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 2 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 2",
+        "Rebirth 2 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-3",
+    "level": 3,
+    "title": "Rebirth 3 - Older Game Build",
+    "requirement": "March footage shows $50.00M plus Legendary and Mythic card requirements. The current game may use different fictionalized names.",
+    "unlocks": [
+      "+50% Money",
+      "Infernal Pack",
+      "Corrupted Pack",
+      "+1 Card Slot",
+      "+1 Bank Slot"
+    ],
+    "strategy": "Bank the best card allowed by the live interface and compare the exact required cards before selling duplicates.",
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Rebirth 3 panel at about 4:00."
+    },
+    "seo": {
+      "title": "Rebirth 3 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 3 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 3 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 3",
+        "Rebirth 3 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-4",
+    "level": 4,
+    "title": "Rebirth 4 Version Comparison",
+    "requirement": "A March recording shows $650.00M while an April recording shows $600.00M. Both display Mythic cards plus Azure Zenith requirements, proving that static competitor tables can become outdated.",
+    "unlocks": [
+      "+50% Money",
+      "Cosmic Pack",
+      "Eclipse Pack",
+      "+1 Card Slot",
+      "+1 Bank Slot in the later March panel"
+    ],
+    "strategy": "Use the live cost rather than either historical number. The two recordings are retained specifically to document balance drift.",
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "March and April Rebirth 4 gameplay",
+      "url": "https://www.youtube.com/watch?v=SIaYH2816I8",
+      "observedAt": "2026-04-15",
+      "note": "April panel shows $600M; March Noob-to-Pro footage shows $650M."
+    },
+    "seo": {
+      "title": "Rebirth 4 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 4 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 4 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 4",
+        "Rebirth 4 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-5",
+    "level": 5,
+    "title": "Rebirth 5 - Version Comparison",
+    "requirement": "March footage shows $3.00B and several named-card requirements. The July return update confirms a Rebirth 5 inventory milestone but does not prove that the old cost or card names survived.",
+    "unlocks": [
+      "March game version: +50% Money, Heaven Pack, Hades Pack, +1 Card Slot and +1 Bank Slot",
+      "Return-update callout: Rebirth 5 and above gained 40 inventory space",
+      "Return-update callout states 80 inventory space in total"
+    ],
+    "strategy": "Treat the $3B path as historical. Confirm the live card list and inventory result before resetting.",
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "Ops Gamer — Game Is Back update walkthrough",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "On-screen update callout at about 40 seconds."
+    },
+    "seo": {
+      "title": "Rebirth 5 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 5 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 5 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 5",
+        "Rebirth 5 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-18",
+    "level": 18,
+    "title": "Rebirth 18 - Summer Part 2 Listing",
+    "requirement": "Summer Part 2 trackers describe Rebirth 18 as an endgame extension with high Cash and Divine-card style gates. Exact live Cash and named-card requirements were not captured in the checked footage.",
+    "unlocks": [
+      "Listed during Summer Part 2 as an endgame progression step",
+      "Often paired by guides with Lucid / Nightmare era content",
+      "Specific current unlock icons remain untranscribed"
+    ],
+    "strategy": "Treat Rebirth 18 as a dated event-era milestone until the live panel is photographed. Do not spend cards based only on a competitor table.",
+    "verificationStatus": "multi-source-reported",
+    "source": {
+      "label": "Summer Part 2 event trackers",
+      "url": "https://abusetime.dev/games/spin-a-soccer-card",
+      "observedAt": "2026-08-06",
+      "note": "Event calendars list New Rebirth 18 with Lucid/Nightmare/Drowned; live panel text was not captured here."
+    },
+    "seo": {
+      "title": "Rebirth 18 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 18 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 18 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 18",
+        "Rebirth 18 unlocks"
+      ]
+    }
+  },
+  {
+    "slug": "rebirth-19",
+    "level": 19,
+    "title": "Rebirth 19",
+    "requirement": "The July 30 update panel says New Rebirth 19; its Cash and card requirements were not displayed.",
+    "unlocks": [
+      "Rebirth 19 was added in the return update",
+      "Specific pack or plot unlocks were not captured"
+    ],
+    "strategy": "Use the live panel as the only requirement checklist. Older guides that stop at Rebirth 8 or 10 are incomplete for the current build.",
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "In-game return update panel",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "New Rebirth 19 is readable on the update panel."
+    },
+    "seo": {
+      "title": "Rebirth 19 Requirements - Spin a Soccer Card Guide",
+      "description": "Rebirth 19 Requirements cover cards, cash, unlocks, reset warnings, strategy and status in this Spin a Soccer Card guide with a last checked game date.",
+      "keywords": [
+        "Rebirth 19 Requirements",
+        "Spin a Soccer Card rebirth requirements",
+        "Spin a Soccer Card Rebirth 19",
+        "Rebirth 19 unlocks"
+      ]
+    }
+  }
+]

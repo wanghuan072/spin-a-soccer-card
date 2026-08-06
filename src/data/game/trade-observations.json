@@ -1,0 +1,32 @@
+[
+  {
+    "id": "nebula-gabriel-2026-07-14",
+    "cardName": "Gabriel",
+    "variant": "Nebula",
+    "amount": 1400,
+    "currency": "Trade Tokens",
+    "observedAt": "2026-07-14",
+    "interpretation": "One creator-described completed acquisition; not a current price floor.",
+    "source": {
+      "label": "Ops Gamer — My First Nebula Cards",
+      "url": "https://www.youtube.com/watch?v=2BbIJdWXLrs",
+      "observedAt": "2026-07-14",
+      "note": "Video description states 1,400 Trade Tokens were spent on Nebula Gabriel."
+    }
+  },
+  {
+    "id": "nebula-havertz-2026-07-14",
+    "cardName": "Havertz",
+    "variant": "Nebula",
+    "amount": 1550,
+    "currency": "Trade Tokens",
+    "observedAt": "2026-07-14",
+    "interpretation": "One creator-described completed acquisition; not a current price floor.",
+    "source": {
+      "label": "Ops Gamer — My First Nebula Cards",
+      "url": "https://www.youtube.com/watch?v=2BbIJdWXLrs",
+      "observedAt": "2026-07-14",
+      "note": "Video description states 1,550 Trade Tokens were spent on Nebula Havertz."
+    }
+  }
+]

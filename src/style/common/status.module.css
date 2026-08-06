@@ -1,0 +1,57 @@
+.badge {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 26px;
+  padding: 3px 8px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-muted);
+  background: var(--color-bg-deep);
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+.badge::before {
+  width: 6px;
+  height: 6px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: var(--color-muted);
+  content: "";
+}
+.badge[data-status="official-source"] {
+  color: oklch(88% 0.14 132);
+  border-color: oklch(58% 0.14 137);
+}
+.badge[data-status="official-source"]::before {
+  background: var(--color-primary);
+}
+.badge[data-status="gameplay-verified"],
+.badge[data-status="video-verified"] {
+  color: oklch(86% 0.1 244);
+  border-color: oklch(60% 0.14 244);
+}
+.badge[data-status="gameplay-verified"]::before,
+.badge[data-status="video-verified"]::before {
+  background: var(--color-blue);
+}
+.badge[data-status="multi-source-reported"],
+.badge[data-status="reported"] {
+  color: oklch(86% 0.11 84);
+  border-color: oklch(57% 0.12 84);
+}
+.badge[data-status="multi-source-reported"]::before,
+.badge[data-status="reported"]::before {
+  background: var(--color-gold);
+}
+.badge[data-status="historical-record"],
+.badge[data-status="expired"] {
+  color: oklch(82% 0.1 306);
+  border-color: oklch(55% 0.12 306);
+}
+.badge[data-status="historical-record"]::before,
+.badge[data-status="expired"]::before {
+  background: var(--color-purple);
+}

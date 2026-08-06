@@ -1,0 +1,706 @@
+[
+  {
+    "code": "HERO-CRYSTAL",
+    "reward": "2 packs at your rebirth level + 3 Spin Wheel spins",
+    "status": "video-verified",
+    "requirement": "Join Pixellar Studios, finish 2 Rebirths, then redeem in Shop → Codes.",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Visible in the live Codes field on Aug 2 gameplay. Beebom (Aug 4) and Nerdschalk both list it among current working codes with the packs-and-spins reward.",
+    "image": "/images/evidence/hero-crystal-code.webp",
+    "source": {
+      "label": "Ops Gamer — Opening Wishes & New Code",
+      "url": "https://www.youtube.com/watch?v=m6L8YLl3zsU",
+      "observedAt": "2026-08-02",
+      "note": "Direct gameplay-field observation, not an official permanent active list."
+    }
+  },
+  {
+    "code": "WEAREBACK",
+    "reward": "2 packs at your rebirth level + 3 spins (some lists say 3 Transcendent packs + 3 spins)",
+    "status": "video-verified",
+    "requirement": "Join Pixellar Studios, finish 2 Rebirths, then redeem in Shop → Codes.",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Visible in the live Codes field on July 30 return gameplay. Beebom lists packs+spins; Nerdschalk lists 3 Transcendent packs + 3 spins.",
+    "image": "/images/evidence/weareback-code.webp",
+    "source": {
+      "label": "Ops Gamer — Game Is Back + New Code",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Direct gameplay-field observation."
+    }
+  },
+  {
+    "code": "RAVEN-COMET",
+    "reward": "2 packs and 3 extra spins (listed)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": "2026-07-26",
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Late-July reported weekly code. It no longer appears on August active lists and is archived until a fresh live hit.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "Pro Game Guides and MrGuider reports",
+      "url": "https://progameguides.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-26",
+      "note": "Multi-source report; not official verification."
+    }
+  },
+  {
+    "code": "BIGUPDATECOMING",
+    "reward": "2 Wish Tickets + 30 Tournament Tokens + 2 spins + 100 Gems",
+    "status": "reported",
+    "requirement": "Worth one quick redeem attempt if you still need Wish Tickets or tokens.",
+    "addedAt": "2026-07-11",
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August tracker conflict on acceptance. Reward text is consistent across older guides.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "Pocket Gamer code report",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Multi-source reward report; current server status remains unverified."
+    }
+  },
+  {
+    "code": "DRAGON-PRIME",
+    "reward": "2 packs + 3 spins",
+    "status": "reported",
+    "requirement": "Try once in Shop → Codes after the group join + 2 Rebirths gate.",
+    "addedAt": "2026-07-19",
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August tracker conflict: Beebom expired vs Nerdschalk working. Keep as try-in-game.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "Conflicting late-July code reports",
+      "url": "https://www.mrguider.org/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Conflicting trackers."
+    }
+  },
+  {
+    "code": "OWL-HAPPY",
+    "reward": "2 packs at your rebirth level + 3 spins",
+    "status": "reported",
+    "requirement": "Paste exactly; some August lists still show it, others say Shop rejects it.",
+    "addedAt": "2026-07-12",
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August tracker conflict: Beebom expired vs Nerdschalk working. Keep as try-in-game.",
+    "image": "/images/codes/code-redemption.webp",
+    "source": {
+      "label": "Conflicting late-July code reports",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Conflicting trackers."
+    }
+  },
+  {
+    "code": "TRADEUPDATE",
+    "reward": "50 Gems and 2 Spins (historical report)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Listed in the expired archive by multiple code guides.",
+    "image": "/images/evidence/trade-plaza.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "lets0trade!",
+    "reward": "50 Gems and 1 Spin (historical report)",
+    "status": "expired",
+    "requirement": "Archive only; punctuation and case are preserved",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record.",
+    "image": "/images/gameplay/sell-cards.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "lets8trade!",
+    "reward": "50 Gems and 1 Spin (historical report)",
+    "status": "expired",
+    "requirement": "Archive only; punctuation and case are preserved",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record.",
+    "image": "/images/gameplay/shop-overlay.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "APRILDAY1",
+    "reward": "41 Gems, 67 Bronze Packs, 2 Spins and $41 (historical report)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired April event code as transcribed by Pocket Gamer.",
+    "image": "/images/gameplay/legacy-pack-pull.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "LETSWISH",
+    "reward": "2 Spins and 50 Gems (historical report)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record.",
+    "image": "/images/evidence/wish-station.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "EXCLUSIVECARDS",
+    "reward": "1 Spin and 50 Gems (historical report)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record.",
+    "image": "/images/cards/legacy/messi-ronaldo-showcase.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "CRYSTAL-GOAL",
+    "reward": "2 packs at the player's rebirth level and lower, plus 3 Spins (historical report)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record; the reward wording varies slightly across trackers.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "Pocket-Codes historical table",
+      "url": "https://pocket-codes.com/spin-a-soccer-card-codes.html",
+      "observedAt": "2026-07-19",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "W0UPDATE",
+    "reward": "2 Spins and 50 Gems (historical report)",
+    "status": "expired",
+    "requirement": "Archive only; the second character is zero",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-07-27",
+    "sourceNote": "Expired-code archive record with exact zero spelling retained.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "Pocket Gamer expired-code archive",
+      "url": "https://www.pocketgamer.com/roblox/spin-a-soccer-card-codes/",
+      "observedAt": "2026-07-27",
+      "note": "Historical code record."
+    }
+  },
+  {
+    "code": "BLAZE-STORM",
+    "reward": "A large multi-pack bundle and Spins shown in the success popup",
+    "status": "expired",
+    "requirement": "Archive only; historical July redemption is retained separately from current status",
+    "addedAt": "2026-07-05",
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Successful July 5 redemption remains documented. Current August trackers consistently place the string in expired archives.",
+    "image": "/images/video/blaze-storm-redemption.webp",
+    "source": {
+      "label": "July redemption video with current status conflict",
+      "url": "https://www.youtube.com/watch?v=fAM7LxYD0t0",
+      "observedAt": "2026-07-05",
+      "note": "Direct historical redemption; current acceptance still requires an in-game test."
+    }
+  },
+  {
+    "code": "PRIME-TURBO",
+    "reward": "Reward not independently confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August expired archives now agree; previously check-required on RobloxDen.",
+    "image": "/images/codes/code-redemption.webp",
+    "source": {
+      "label": "RobloxDen code tracker",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Third-party status lead."
+    }
+  },
+  {
+    "code": "EPIC-LION",
+    "reward": "Reward not independently confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August expired archives now agree; previously check-required on RobloxDen.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "RobloxDen code tracker",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Third-party status lead."
+    }
+  },
+  {
+    "code": "wownewupdate11",
+    "reward": "Reward not independently confirmed",
+    "status": "expired",
+    "requirement": "Archive only; preserve the lowercase spelling",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-05",
+    "sourceNote": "Current code trackers consistently place this string in their expired lists.",
+    "image": "/images/evidence/current-pack-shop.webp",
+    "source": {
+      "label": "RobloxDen code tracker",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-05",
+      "note": "Expired status is consistent across the checked public trackers."
+    }
+  },
+  {
+    "code": "PHOENIX-MYTHIC",
+    "reward": "2 packs and 3 spins (listed)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August expired archives now agree across the checked public trackers.",
+    "image": "/images/video/summer-admin-event.webp",
+    "source": {
+      "label": "Conflicting current code trackers",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-05",
+      "note": "Current status remains unresolved without a successful live redemption."
+    }
+  },
+  {
+    "code": "COMET-SHARK",
+    "reward": "2 packs and 3 spins (listed)",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "August expired archives now agree across the checked public trackers.",
+    "image": "/images/video/oracle-pack-index.webp",
+    "source": {
+      "label": "Conflicting current code trackers",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-05",
+      "note": "Current status remains unresolved without a successful live redemption."
+    }
+  },
+  {
+    "code": "WOLF-METEOR",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/late-game-pack-shop.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "OMEGA-STAR",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/evidence/pack-transcendent.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "nethercards",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only; lowercase spelling retained",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/evidence/card-wildenz.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "TIGER-METEOR",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/tournament-panel.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "TOURNAMENT67",
+    "reward": "Historical tournament reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/summer-tournament-shop.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "TOURNAMENT",
+    "reward": "Historical tournament reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/trade-token-shop.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "CHAMP-MOON",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/summer-mutation-index.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "lets1spin",
+    "reward": "Historical spin reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only; lowercase spelling retained",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/official/game-thumbnail-2.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "TIGER-HAWK",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-03",
+    "sourceNote": "Expired-code archive entry.",
+    "image": "/images/video/weather-potions.webp",
+    "source": {
+      "label": "RobloxDen expired archive",
+      "url": "https://robloxden.com/game-codes/spin-a-soccer-card",
+      "observedAt": "2026-08-03",
+      "note": "Historical string."
+    }
+  },
+  {
+    "code": "TOURNAMENTS50",
+    "reward": "Historical tournament reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "APRILDAY2",
+    "reward": "Historical April event reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "APRILDAY3",
+    "reward": "Historical April event reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-redemption.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "RUBY-PRIME",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/research/codes-hero.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "TIGER-MEGA",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/gameplay/shop-overlay.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "CHAMP-CRYSTAL",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "RAVEN-OMEGA",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "MOON-STRIKER",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-redemption.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "GOLDEN-BRONZE",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/research/codes-hero.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "release",
+    "reward": "Historical launch-era reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/gameplay/shop-overlay.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "CHAMP-LEGEND",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-field.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "GOLDEN-SHADOW",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-menu.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "MYTHIC-CRYSTAL",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/codes/code-redemption.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "FOX-SUPER",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/research/codes-hero.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  },
+  {
+    "code": "FROZEN-DRAGON",
+    "reward": "Historical reward not confirmed",
+    "status": "expired",
+    "requirement": "Archive only",
+    "addedAt": null,
+    "lastVerifiedAt": "2026-08-06",
+    "sourceNote": "Added from August 2026 multi-source expired archives to improve historical code coverage. Spelling is preserved as published by those trackers.",
+    "image": "/images/gameplay/shop-overlay.webp",
+    "source": {
+      "label": "August 2026 expired-code archives (Beebom / Nerdschalk)",
+      "url": "https://beebom.com/spin-a-soccer-card-codes/",
+      "observedAt": "2026-08-06",
+      "note": "Archived from multi-source expired lists; not a live redemption test."
+    }
+  }
+]

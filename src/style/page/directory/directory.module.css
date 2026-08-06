@@ -1,0 +1,487 @@
+.content {
+  padding-block: var(--space-inner-top) 64px;
+}
+.section {
+  margin-top: var(--space-inner-section);
+  counter-increment: directory-section;
+}
+.section:first-child {
+  margin-top: 0;
+}
+.heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 18px;
+  margin-bottom: 16px;
+  padding-left: 44px;
+}
+.heading::before {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-style: italic;
+  line-height: 1;
+  content: "0" counter(directory-section);
+}
+.heading h2 {
+  font-size: var(--text-inner-heading);
+  line-height: 1.15;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+.heading p {
+  max-width: 68ch;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+}
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.packsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.guideGrid,
+.updateGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.guideGrid {
+  counter-reset: guide-card;
+  gap: 18px 14px;
+}
+.guideGrid > article {
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  border: 1px solid color-mix(in oklch, var(--color-border) 82%, var(--color-primary));
+  border-radius: 14px;
+  background: color-mix(in oklch, var(--color-panel) 94%, var(--color-primary));
+  box-shadow: 0 12px 30px oklch(7% 0.025 255 / 0.22);
+  counter-increment: guide-card;
+  isolation: isolate;
+}
+.guideGrid > article::after {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid oklch(92% 0.03 255 / 0.42);
+  border-radius: 50%;
+  color: oklch(96% 0.018 255);
+  background: oklch(14% 0.045 255 / 0.86);
+  font: 900 0.72rem var(--font-display);
+  content: "0" counter(guide-card);
+}
+.guideGrid > article > a:first-child {
+  aspect-ratio: 4 / 3;
+  border-bottom: 1px solid var(--color-border);
+}
+.guideGrid > article > a:first-child::after {
+  position: absolute;
+  inset: auto 0 0;
+  height: 40%;
+  background: linear-gradient(transparent, oklch(10% 0.03 255 / 0.72));
+  content: "";
+  pointer-events: none;
+}
+.guideGrid > article > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 9px;
+  padding: 16px 16px 14px;
+}
+.guideGrid > article > div > span {
+  width: fit-content;
+  padding-bottom: 5px;
+  border-bottom: 1px solid color-mix(in oklch, var(--color-gold) 55%, transparent);
+}
+.guideGrid > article > div h3 {
+  font-size: clamp(1.12rem, 1.6vw, 1.42rem);
+  line-height: 1.14;
+}
+.guideGrid > article > div p {
+  color: color-mix(in oklch, var(--color-muted) 88%, var(--color-text));
+  font-size: 0.86rem;
+  line-height: 1.55;
+  -webkit-line-clamp: 4;
+}
+.guideGrid > article > div > a:last-child {
+  margin-top: auto;
+  padding-top: 6px;
+}
+.guideGrid > article,
+.updateGrid > article,
+.guideGrid > article:first-child,
+.updateGrid > article:first-child,
+.guideGrid > article:nth-child(2),
+.updateGrid > article:nth-child(2) {
+  grid-column: auto;
+}
+.indexGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--color-border);
+}
+.indexCard {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 8px 16px;
+  min-height: 112px;
+  padding: 15px 16px;
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+}
+.indexCard:nth-child(3n) {
+  border-right: 0;
+}
+.indexCard > span {
+  grid-row: span 3;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 900;
+}
+.indexCard > :nth-child(2) {
+  width: fit-content;
+}
+.indexCard h2,
+.indexCard h3 {
+  grid-column: 2;
+  min-width: 0;
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.indexCard p {
+  grid-column: 2 / 4;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+}
+.indexCard a {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 6px;
+  color: var(--color-primary);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 0;
+  padding: 14px 16px;
+  border: 1px solid oklch(57% 0.12 83);
+  border-radius: var(--radius-md);
+  color: oklch(88% 0.07 83);
+  background: oklch(22% 0.06 78);
+}
+.notice svg {
+  flex: 0 0 auto;
+  color: var(--color-gold);
+}
+.notice p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.notice a {
+  color: var(--color-primary);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.mediaGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 0.8fr;
+  gap: 14px;
+}
+.mediaGrid figure {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-panel);
+}
+.mediaGrid img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+.mediaGrid figure:last-child img {
+  object-fit: contain;
+  padding: 24px;
+  background: oklch(14% 0.035 255);
+}
+.mediaGrid figcaption {
+  padding: 12px 14px 14px;
+  color: var(--color-muted);
+  font-size: 0.76rem;
+}
+.codeList {
+  display: grid;
+  gap: 8px;
+}
+.codeList article {
+  display: grid;
+  grid-template-columns:
+    minmax(170px, 0.55fr) minmax(260px, 1fr) minmax(210px, 0.8fr)
+    auto;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-panel);
+}
+.codeList code {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+.codeList p,
+.codeList small {
+  color: var(--color-muted);
+}
+.codeList p {
+  font-size: 0.84rem;
+}
+.codeList small {
+  font-size: 0.7rem;
+}
+.codeList button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  gap: 7px;
+  border: 1px solid var(--color-purple);
+  border-radius: 8px;
+  color: var(--color-text);
+  background: oklch(40% 0.14 306);
+  font: 800 0.8rem var(--font-body);
+  cursor: pointer;
+}
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  counter-reset: steps;
+  gap: 12px;
+}
+.steps li {
+  min-height: 132px;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-panel);
+  counter-increment: steps;
+}
+.steps li::before {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 900;
+  content: "0" counter(steps);
+}
+.steps strong {
+  display: block;
+  margin-bottom: 7px;
+}
+.steps p {
+  color: var(--color-muted);
+  font-size: 0.84rem;
+}
+.gamepassGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+.gamepassCard {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  overflow: hidden;
+  min-height: 150px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-panel);
+}
+.gamepassImage {
+  position: relative;
+  min-height: 150px;
+  background: oklch(13% 0.03 255);
+}
+.gamepassImage img {
+  object-fit: cover;
+}
+.gamepassCard > div:last-child {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+  padding: 15px;
+}
+.gamepassCard span {
+  color: var(--color-gold);
+  font: 900 0.72rem var(--font-display);
+  letter-spacing: 0.07em;
+}
+.gamepassCard h2 {
+  font-size: clamp(1rem, 2.5vw, 1.18rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.gamepassCard p,
+.gamepassCard small {
+  color: var(--color-muted);
+}
+.gamepassCard p {
+  font-size: 0.8rem;
+}
+.gamepassCard small {
+  font-size: 0.65rem;
+}
+.gamepassCard a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+@media (max-width: 1024px) {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .packsGrid,
+  .gamepassGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .guideGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .guideGrid > article,
+  .updateGrid > article,
+  .guideGrid > article:first-child,
+  .updateGrid > article:first-child,
+  .guideGrid > article:nth-child(2),
+  .updateGrid > article:nth-child(2) {
+    grid-column: auto;
+  }
+  .indexGrid,
+  .mediaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .codeList article {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    padding-block: 24px 48px;
+  }
+  .section {
+    margin-top: 36px;
+  }
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 14px;
+    padding-left: 38px;
+  }
+  .heading::before {
+    font-size: 1.4rem;
+  }
+  .guideGrid,
+  .updateGrid {
+    grid-template-columns: 1fr;
+  }
+  .cardsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .packsGrid,
+  .indexGrid,
+  .mediaGrid,
+  .steps,
+  .gamepassGrid {
+    grid-template-columns: 1fr;
+  }
+  .guideGrid > article,
+  .updateGrid > article,
+  .guideGrid > article:first-child,
+  .updateGrid > article:first-child,
+  .guideGrid > article:nth-child(2),
+  .updateGrid > article:nth-child(2) {
+    grid-column: 1 / -1;
+  }
+  .indexCard,
+  .indexCard:nth-child(2n),
+  .indexCard:nth-child(3n) {
+    grid-template-columns: 48px 1fr;
+    border-right: 0;
+    padding-inline: 8px;
+  }
+  .indexCard p {
+    grid-column: 2;
+  }
+  .indexCard a {
+    grid-column: 2;
+    grid-row: auto;
+  }
+  .gamepassCard {
+    grid-template-columns: 96px 1fr;
+  }
+  .mediaGrid img {
+    height: 200px;
+  }
+  .codeList article {
+    grid-template-columns: 1fr;
+  }
+  .codeList button {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+  .gamepassCard {
+    grid-template-columns: 1fr;
+  }
+  .gamepassImage {
+    min-height: 140px;
+  }
+}

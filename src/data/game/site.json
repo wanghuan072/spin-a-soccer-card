@@ -1,0 +1,38 @@
+{
+  "snapshotDate": "2026-08-06",
+  "stats": [
+    {
+      "label": "Documented cards",
+      "value": "31",
+      "note": "Current gameplay pulls, historical pulls and community status records"
+    },
+    {
+      "label": "Pack details",
+      "value": "18",
+      "note": "Current Shop rows plus historical and community-listed packs"
+    },
+    {
+      "label": "Codes tracked",
+      "value": "44",
+      "note": "Video sightings, conflicting trackers and expired archive coverage"
+    },
+    {
+      "label": "Gameplay videos",
+      "value": "14",
+      "note": "March through August 2026"
+    }
+  ],
+  "officialSnapshot": {
+    "universeId": 9272693470,
+    "rootPlaceId": 112490729816320,
+    "tradeWorldPlaceId": 124069176440953,
+    "creator": "Pixellar Studios | RSC",
+    "playing": 4445,
+    "visits": 263836809,
+    "maxPlayers": 8,
+    "gamePasses": 11,
+    "copyingAllowed": false,
+    "observedAt": "2026-08-06",
+    "apiUpdatedAt": "2026-08-03T16:15:54.944Z"
+  }
+}

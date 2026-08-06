@@ -1,0 +1,475 @@
+.page {
+  padding-block: var(--space-inner-top) 72px;
+}
+
+.content {
+  display: grid;
+  gap: clamp(28px, 4vw, 48px);
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: clamp(20px, 3vw, 36px);
+  align-items: center;
+  padding: clamp(18px, 2.5vw, 28px);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    oklch(17% 0.05 247),
+    oklch(12% 0.035 250)
+  );
+}
+
+.introCopy {
+  display: grid;
+  gap: 12px;
+}
+
+.introCopy h2 {
+  font-size: clamp(1.35rem, 2.4vw, 2.2rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.introCopy p {
+  max-width: 58ch;
+  color: var(--color-muted);
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+.introPoints {
+  display: grid;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.introPoints li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.introPoints svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--color-primary);
+}
+
+.introFigure {
+  position: relative;
+  overflow: hidden;
+  min-height: 240px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 12px;
+  background: var(--color-bg-deep);
+}
+
+.introFigure img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.introFigure figcaption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px 12px;
+  color: oklch(92% 0.03 230);
+  background: linear-gradient(transparent, oklch(10% 0.04 248 / 0.92));
+  font-size: 0.78rem;
+}
+
+.sectionHead {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.sectionHead span {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.sectionHead h2 {
+  font-size: clamp(1.25rem, 2.2vw, 2rem);
+  line-height: 1.15;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+}
+
+.sectionHead p {
+  max-width: 70ch;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.workingGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.workingCard {
+  display: grid;
+  overflow: hidden;
+  border: 1px solid oklch(55% 0.12 145);
+  border-radius: 14px;
+  background: oklch(15% 0.045 247);
+  box-shadow: 0 10px 28px oklch(6% 0.03 248 / 0.35);
+}
+
+.workingMedia {
+  position: relative;
+  min-height: 210px;
+  background: oklch(12% 0.03 250);
+}
+
+.workingMedia img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.workingBody {
+  display: grid;
+  gap: 10px;
+  padding: 16px 18px 18px;
+}
+
+.workingTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.workingTop code {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 3.5vw, 1.45rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.workingBody p {
+  color: var(--color-muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.workingMeta {
+  color: oklch(78% 0.04 230);
+  font-size: 0.82rem;
+}
+
+.workingActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.workingActions button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  gap: 8px;
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  color: oklch(12% 0.04 140);
+  background: var(--color-primary);
+  font: 850 0.88rem var(--font-body);
+  cursor: pointer;
+}
+
+.tryList,
+.expiredList {
+  display: grid;
+  gap: 10px;
+}
+
+.tryCard {
+  display: grid;
+  grid-template-columns: 120px minmax(140px, 0.4fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-panel);
+}
+
+.tryShot {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 84px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  background: var(--color-bg-deep);
+}
+
+.tryShot img {
+  object-fit: cover;
+}
+
+.expiredCard {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.45fr) minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-panel);
+}
+
+.tryCard code,
+.expiredCard code {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 3.2vw, 1.2rem);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.tryCard p,
+.expiredCard p {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.tryCard small,
+.expiredCard small {
+  display: block;
+  margin-top: 4px;
+  color: oklch(72% 0.03 230);
+  font-size: 0.78rem;
+}
+
+.redeem {
+  display: grid;
+  gap: 16px;
+}
+
+.redeemSteps {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: redeem;
+}
+
+.redeemSteps li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  gap: 12px;
+  align-items: stretch;
+  min-height: 150px;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-panel);
+  counter-increment: redeem;
+}
+
+.redeemCopy {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+}
+
+.redeemCopy::before {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 900;
+  content: "0" counter(redeem);
+}
+
+.redeemCopy strong {
+  font-size: 1.05rem;
+}
+
+.redeemCopy p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.redeemShot {
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 8px;
+  background: var(--color-bg-deep);
+}
+
+.redeemShot img {
+  object-fit: cover;
+}
+
+.successNote {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
+  gap: 16px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid oklch(55% 0.12 145);
+  border-radius: 12px;
+  background: oklch(16% 0.05 150 / 0.35);
+}
+
+.successNote figure {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  border-radius: 8px;
+  background: var(--color-bg-deep);
+}
+
+.successNote img {
+  object-fit: cover;
+}
+
+.successNote h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.successNote p {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.expiredCard {
+  grid-template-columns: minmax(140px, 0.4fr) minmax(0, 1fr) 90px;
+  opacity: 0.92;
+}
+
+.expiredCard span {
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: right;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.faq article {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-panel);
+}
+
+.faq h3 {
+  margin-bottom: 8px;
+  font-size: clamp(0.98rem, 2.5vw, 1.05rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.faq p {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.faq a {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+@media (max-width: 960px) {
+  .intro,
+  .workingGrid,
+  .redeemSteps,
+  .successNote,
+  .faq {
+    grid-template-columns: 1fr;
+  }
+
+  .tryCard,
+  .expiredCard {
+    grid-template-columns: 1fr;
+  }
+
+  .tryShot {
+    min-height: 140px;
+  }
+
+  .expiredCard span {
+    text-align: left;
+  }
+
+  .redeemSteps li {
+    grid-template-columns: 1fr;
+  }
+
+  .redeemShot {
+    min-height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 16px;
+  }
+
+  .introCopy h2,
+  .sectionHead h2 {
+    font-size: var(--text-inner-heading);
+    line-height: 1.18;
+  }
+
+  .sectionHead {
+    margin-bottom: 12px;
+  }
+
+  .workingBody,
+  .faq article {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introPoints li {
+    font-size: 0.9rem;
+  }
+
+  .workingMedia {
+    min-height: 160px;
+  }
+
+  .redeemCopy::before {
+    font-size: 1.1rem;
+  }
+}

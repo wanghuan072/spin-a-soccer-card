@@ -1,0 +1,116 @@
+[
+  {
+    "slug": "nether",
+    "name": "Nether",
+    "color": "charcoal",
+    "description": "A current card label visible below Varmolen and Devalto in a Transcendent Pack opening.",
+    "effect": "The recording does not publish a fixed income range or odds.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Directly readable in July 30 gameplay.",
+    "seo": {
+      "title": "Nether Rarity Details - Spin a Soccer Card",
+      "description": "Nether Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Nether Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Nether cards",
+        "Nether cards"
+      ]
+    }
+  },
+  {
+    "slug": "exclusive",
+    "name": "Exclusive",
+    "color": "gold",
+    "description": "A current label visible on Alverton and Wildenz.",
+    "effect": "Exclusive does not by itself establish a trade price or permanent availability.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Directly readable in July 30 and August 3 gameplay.",
+    "seo": {
+      "title": "Exclusive Rarity Details - Spin a Soccer Card",
+      "description": "Exclusive Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Exclusive Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Exclusive cards",
+        "Exclusive cards"
+      ]
+    }
+  },
+  {
+    "slug": "bloodmoon",
+    "name": "Bloodmoon",
+    "color": "red",
+    "description": "The return update panel explicitly announces new Bloodmoon cards.",
+    "effect": "Individual Bloodmoon names and odds were not listed on the update panel.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Observed on the July 30 in-game update panel.",
+    "seo": {
+      "title": "Bloodmoon Rarity Details - Spin a Soccer Card",
+      "description": "Bloodmoon Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Bloodmoon Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Bloodmoon cards",
+        "Bloodmoon cards"
+      ]
+    }
+  },
+  {
+    "slug": "limited-blackmoon",
+    "name": "Limited Blackmoon",
+    "color": "prismatic",
+    "description": "The return update panel separately announces Limited Blackmoon cards.",
+    "effect": "The word Limited is confirmed; availability dates and pool size are not shown.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Observed on the July 30 in-game update panel.",
+    "seo": {
+      "title": "Limited Blackmoon Rarity Details - Spin a Soccer Card",
+      "description": "Limited Blackmoon Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Limited Blackmoon Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Limited Blackmoon cards",
+        "Limited Blackmoon cards"
+      ]
+    }
+  },
+  {
+    "slug": "forbidden",
+    "name": "Forbidden",
+    "color": "crimson",
+    "description": "A current pack-tier label visible on Ordan in the Shop.",
+    "effect": "The label is recorded for navigation; it is not treated as a confirmed card rarity.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Observed on the July 30 current Shop panel.",
+    "seo": {
+      "title": "Forbidden Rarity Details - Spin a Soccer Card",
+      "description": "Forbidden Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Forbidden Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Forbidden cards",
+        "Forbidden cards"
+      ]
+    }
+  },
+  {
+    "slug": "ascended",
+    "name": "Ascended",
+    "color": "violet",
+    "description": "A current pack-tier label visible on Cosmic in the Shop.",
+    "effect": "The label is recorded for pack progression; card odds were not opened.",
+    "verificationStatus": "gameplay-verified",
+    "sourceNote": "Observed on the July 30 current Shop panel.",
+    "seo": {
+      "title": "Ascended Rarity Details - Spin a Soccer Card",
+      "description": "Ascended Rarity Details list cards, packs, classification and availability in this Spin a Soccer Card rarity guide, including meaning and checked date.",
+      "keywords": [
+        "Ascended Rarity Details",
+        "Spin a Soccer Card Rarity Details",
+        "Spin a Soccer Card Ascended cards",
+        "Ascended cards"
+      ]
+    }
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1843362991,
+    "slug": "auto-join-tournaments",
+    "name": "Auto Join Tournaments!",
+    "price": 179,
+    "isForSale": true,
+    "description": "Automatically joins eligible tournaments. Availability and behavior should still be confirmed in the current server.",
+    "image": "/images/gamepasses/auto-join-tournaments.webp",
+    "createdAt": "2026-05-18",
+    "updatedAt": "2026-05-18",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Name, sale state and Robux price returned by Roblox."
+    }
+  },
+  {
+    "id": 1688565896,
+    "slug": "godly-mutation-luck",
+    "name": "GODLY Mutation Luck!",
+    "price": 639,
+    "isForSale": true,
+    "description": "Paid mutation-luck tier. The API does not publish an exact probability multiplier, so none is claimed here.",
+    "image": "/images/gamepasses/godly-mutation-luck.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1691541199,
+    "slug": "vip",
+    "name": "VIP!",
+    "price": 399,
+    "isForSale": true,
+    "description": "VIP product listed for this universe. Perks can change and must be read from the live purchase panel before buying.",
+    "image": "/images/gamepasses/vip.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1642051165,
+    "slug": "auto-collect-money",
+    "name": "Auto Collect Money",
+    "price": 45,
+    "isForSale": true,
+    "description": "Automates plot-income collection according to the current game implementation.",
+    "image": "/images/gamepasses/auto-collect-money.webp",
+    "createdAt": "2025-12-24",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1691271288,
+    "slug": "double-money",
+    "name": "Double Money",
+    "price": 599,
+    "isForSale": true,
+    "description": "Money-boost product. Compare the live checkout and your plot labels before purchase.",
+    "image": "/images/gamepasses/double-money.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1642325239,
+    "slug": "auto-skip",
+    "name": "Auto Skip!",
+    "price": 129,
+    "isForSale": true,
+    "description": "Automatically skips the card-opening animation; it does not promise different odds.",
+    "image": "/images/gamepasses/auto-skip.webp",
+    "createdAt": "2025-12-24",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official product record; the behavior label is visible in historical gameplay."
+    }
+  },
+  {
+    "id": 1688240071,
+    "slug": "ultra-mutation-luck",
+    "name": "Ultra Mutation Luck!",
+    "price": 199,
+    "isForSale": true,
+    "description": "Middle paid mutation-luck tier; no exact odds are exposed by the API.",
+    "image": "/images/gamepasses/ultra-mutation-luck.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1671755325,
+    "slug": "auto-equip-best",
+    "name": "Auto Equip Best!",
+    "price": 60,
+    "isForSale": true,
+    "description": "Automates best-card equipping according to the game's current ranking logic.",
+    "image": "/images/gamepasses/auto-equip-best.webp",
+    "createdAt": "2026-01-15",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1688290078,
+    "slug": "super-mutation-luck",
+    "name": "Super Mutation Luck!",
+    "price": 60,
+    "isForSale": true,
+    "description": "Entry paid mutation-luck tier. Treat creator videos as outcomes, not proof of a percentage.",
+    "image": "/images/gamepasses/super-mutation-luck.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1688238039,
+    "slug": "inventory-500",
+    "name": "Inventory +500",
+    "price": 60,
+    "isForSale": true,
+    "description": "Adds 500 inventory capacity according to the product name returned by Roblox.",
+    "image": "/images/gamepasses/inventory-500.webp",
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-06-03",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official public product record."
+    }
+  },
+  {
+    "id": 1651537025,
+    "slug": "unlock-bank-slots",
+    "name": "Unlock Bank Slots!",
+    "price": null,
+    "isForSale": false,
+    "description": "Legacy or unavailable Bank-slot product. Roblox currently returns it as not for sale.",
+    "image": "/images/gamepasses/unlock-bank-slots.webp",
+    "createdAt": "2026-01-01",
+    "updatedAt": "2026-04-11",
+    "source": {
+      "label": "Official Roblox game-pass API",
+      "url": "https://apis.roblox.com/game-passes/v1/universes/9272693470/game-passes?passView=Full&limit=100",
+      "observedAt": "2026-08-04",
+      "note": "Official API returns the product with no current price and not-for-sale state."
+    }
+  }
+]

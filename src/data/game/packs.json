@@ -1,0 +1,671 @@
+[
+  {
+    "id": 1,
+    "slug": "cosmic-pack",
+    "name": "Cosmic Pack",
+    "image": "/images/evidence/pack-cosmic.webp",
+    "cost": 20000000,
+    "currency": "Cash",
+    "unlockRequirement": "Current Shop listing seen; any rebirth gate was not visible in the captured panel.",
+    "rebirthRequirement": null,
+    "highestRarity": "Ascended",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "The July 30 Shop panel lists Cosmic as an Ascended pack with one in stock, a $20.00M Cash price and a 149 Robux option for ten. The Odds button was visible but not opened in the checked footage.",
+    "order": 1,
+    "verificationStatus": "gameplay-verified",
+    "availability": "current-shop",
+    "stockPerRefresh": 1,
+    "bundleCost": 149,
+    "bundleQuantity": 10,
+    "source": {
+      "label": "Ops Gamer gameplay — current Pack Shop",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Name, Ascended label, stock, Cash price and ten-pack Robux price are readable."
+    },
+    "seo": {
+      "title": "Cosmic Pack Details - Spin a Soccer Card Packs",
+      "description": "Cosmic Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Cosmic Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Cosmic Pack",
+        "Cosmic Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "slug": "ordan-pack",
+    "name": "Ordan Pack",
+    "image": "/images/evidence/pack-ordan.webp",
+    "cost": 250000000,
+    "currency": "Cash",
+    "unlockRequirement": "Current Shop listing seen; rebirth gate not visible.",
+    "rebirthRequirement": null,
+    "highestRarity": "Forbidden",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "The current Shop frame lists Ordan as Forbidden, with two in stock, a $250.00M Cash price and a 1,099 Robux option for ten packs.",
+    "order": 2,
+    "verificationStatus": "gameplay-verified",
+    "availability": "current-shop",
+    "stockPerRefresh": 2,
+    "bundleCost": 1099,
+    "bundleQuantity": 10,
+    "source": {
+      "label": "Ops Gamer gameplay — current Pack Shop",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Name, Forbidden label, stock and two purchase options are readable."
+    },
+    "seo": {
+      "title": "Ordan Pack Details - Spin a Soccer Card Packs",
+      "description": "Ordan Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Ordan Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Ordan Pack",
+        "Ordan Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "slug": "alpha-pack",
+    "name": "Alpha Pack",
+    "image": "/images/evidence/pack-alpha.webp",
+    "cost": 400000000,
+    "currency": "Cash",
+    "unlockRequirement": "Current Shop listing seen; the tier text and rebirth gate are obscured.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not readable",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "The same Shop frame shows Alpha with three in stock, a $400.00M Cash price and a 1,199 Robux option for ten. Its tier label is too blurred to transcribe reliably.",
+    "order": 3,
+    "verificationStatus": "gameplay-verified",
+    "availability": "current-shop",
+    "stockPerRefresh": 3,
+    "bundleCost": 1199,
+    "bundleQuantity": 10,
+    "source": {
+      "label": "Ops Gamer gameplay — current Pack Shop",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Name, stock and purchase prices are readable; the tier is not."
+    },
+    "seo": {
+      "title": "Alpha Pack Details - Spin a Soccer Card Packs",
+      "description": "Alpha Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Alpha Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Alpha Pack",
+        "Alpha Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "transcendent-pack",
+    "name": "Transcendent Pack",
+    "image": "/images/evidence/pack-transcendent.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Three packs appeared on Day 5 of the limited Welcome Back Calendar.",
+    "rebirthRequirement": null,
+    "highestRarity": "Nether and Exclusive pulls seen",
+    "cardCount": null,
+    "cardSlugs": [
+      "varmolen",
+      "alverton",
+      "devalto"
+    ],
+    "description": "The Welcome Back Calendar visibly offered three Transcendent Packs. A recorded opening then produced Varmolen, Alverton and Devalto, establishing a partial seen pool without establishing odds.",
+    "order": 4,
+    "verificationStatus": "gameplay-verified",
+    "availability": "current-reward",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Ops Gamer gameplay — Welcome Back rewards",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Calendar reward and three resulting card pulls are visible."
+    },
+    "seo": {
+      "title": "Transcendent Pack Details - Spin a Soccer Card Packs",
+      "description": "Transcendent Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Transcendent Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Transcendent Pack",
+        "Transcendent Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "slug": "fallen-pack",
+    "name": "Fallen Pack",
+    "image": "/images/packs/fallen-pack-video.jpg",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Not captured; documented as a historical pack opening.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "A May 10 creator recording documents fifty Fallen Pack openings. It proves that the pack existed in that version, but not that it remains in the current Shop.",
+    "order": 5,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Ops Gamer — Opening 50 Fallen Packs",
+      "url": "https://www.youtube.com/watch?v=F9Kc1PUnBYs",
+      "observedAt": "2026-05-10",
+      "note": "Historical creator video; current availability was not reverified."
+    },
+    "seo": {
+      "title": "Fallen Pack Details - Spin a Soccer Card Packs",
+      "description": "Fallen Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Fallen Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Fallen Pack",
+        "Fallen Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "slug": "dusk-pack",
+    "name": "Dusk Pack",
+    "image": "/images/packs/dusk-pack-video.jpg",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Not captured; documented as a historical pack opening.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "An April 27 creator recording documents one hundred Dusk Pack openings. Exact price, odds and current status remain unconfirmed.",
+    "order": 6,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Ops Gamer — Opening 100 Dusk Packs",
+      "url": "https://www.youtube.com/watch?v=aWRw0u8MZm0",
+      "observedAt": "2026-04-27",
+      "note": "Historical creator video; current availability was not reverified."
+    },
+    "seo": {
+      "title": "Dusk Pack Details - Spin a Soccer Card Packs",
+      "description": "Dusk Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Dusk Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Dusk Pack",
+        "Dusk Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "slug": "oracle-pack",
+    "name": "Oracle Pack",
+    "image": "/images/packs/oracle-pack-video.jpg",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Not captured; documented as a historical pack opening.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "An April 2 creator recording documents 125 Oracle Pack openings. The archived entry does not assign a present-day price or pool.",
+    "order": 7,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Ops Gamer — Opening 125 Oracle Packs",
+      "url": "https://www.youtube.com/watch?v=bOCz4Vmme04",
+      "observedAt": "2026-04-02",
+      "note": "Historical creator video; current availability was not reverified."
+    },
+    "seo": {
+      "title": "Oracle Pack Details - Spin a Soccer Card Packs",
+      "description": "Oracle Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Oracle Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Oracle Pack",
+        "Oracle Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "slug": "gold-pack",
+    "name": "Gold Pack",
+    "image": "/images/video/early-pack-shop.webp",
+    "cost": 5000,
+    "currency": "Cash",
+    "unlockRequirement": "No rebirth label is shown on the March Shop row.",
+    "rebirthRequirement": 0,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [
+      "havertz-gold-june-2026",
+      "davies-gold-june-2026",
+      "arda-guler-gold-june-2026",
+      "wirtz-electrified-june-2026"
+    ],
+    "description": "The early-game Shop visibly prices Gold at $5,000. June footage supplies a dated sample of four Gold-labelled pulls without establishing the full pool or current odds.",
+    "order": 8,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": 5,
+    "bundleQuantity": 1,
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Gold Shop row and $5,000 Cash / 5 Robux options are readable."
+    },
+    "seo": {
+      "title": "Gold Pack Details - Spin a Soccer Card Packs",
+      "description": "Gold Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Gold Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Gold Pack",
+        "Gold Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "slug": "toxic-pack",
+    "name": "Toxic Pack",
+    "image": "/images/video/rebirth-2-panel.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Shown as a Rebirth 2 unlock in the March progression panel.",
+    "rebirthRequirement": 2,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "A March Rebirth 2 panel visibly includes Toxic Pack among the unlocks. Later competitor prices are not copied because the current row was not captured.",
+    "order": 9,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Rebirth 2 unlock panel."
+    },
+    "seo": {
+      "title": "Toxic Pack Details - Spin a Soccer Card Packs",
+      "description": "Toxic Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Toxic Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Toxic Pack",
+        "Toxic Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "slug": "corrupted-pack",
+    "name": "Corrupted Pack",
+    "image": "/images/video/rebirth-3-panel.webp",
+    "cost": 12800000,
+    "currency": "Cash",
+    "unlockRequirement": "Rebirth 3 in the March build.",
+    "rebirthRequirement": 3,
+    "highestRarity": "Mythic label shown in June Shop footage",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "The March Rebirth 3 panel lists Corrupted as an unlock. A separate June Shop frame shows a $12.80M price, linking the historical unlock and price without treating either as current.",
+    "order": 10,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": 90,
+    "bundleQuantity": 1,
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Unlock panel; the later $12.80M / 90 Robux row is visible in the June SSundee recording."
+    },
+    "seo": {
+      "title": "Corrupted Pack Details - Spin a Soccer Card Packs",
+      "description": "Corrupted Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Corrupted Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Corrupted Pack",
+        "Corrupted Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "slug": "eclipse-pack",
+    "name": "Eclipse Pack",
+    "image": "/images/video/rebirth-4-panel.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Shown as a Rebirth 4 unlock in both March and April footage.",
+    "rebirthRequirement": 4,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "Eclipse Pack appears beside Cosmic in two historical Rebirth 4 panels. The required Cash changed from $600M in April footage to $650M in another build, so the pack entry keeps a version boundary.",
+    "order": 11,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Rebirth 4 unlock panel; later videos demonstrate version changes."
+    },
+    "seo": {
+      "title": "Eclipse Pack Details - Spin a Soccer Card Packs",
+      "description": "Eclipse Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Eclipse Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Eclipse Pack",
+        "Eclipse Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "slug": "heaven-pack",
+    "name": "Heaven Pack",
+    "image": "/images/video/rebirth-5-panel.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Shown as a Rebirth 5 unlock in the March build.",
+    "rebirthRequirement": 5,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "The March Rebirth 5 panel visibly names Heaven Pack. Current availability is not inferred because the return build now reaches Rebirth 19 and uses different tiers.",
+    "order": 12,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "JuniorGummy — Noob to Pro",
+      "url": "https://www.youtube.com/watch?v=p6aR7xHqjwQ",
+      "observedAt": "2026-03-09",
+      "note": "Rebirth 5 unlock panel."
+    },
+    "seo": {
+      "title": "Heaven Pack Details - Spin a Soccer Card Packs",
+      "description": "Heaven Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Heaven Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Heaven Pack",
+        "Heaven Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "slug": "scarlet-pack",
+    "name": "Scarlet Pack",
+    "image": "/images/video/scarlet-pack-session.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Seen in a July inventory and code reward; its original Shop gate was not captured.",
+    "rebirthRequirement": null,
+    "highestRarity": "109-rated pull seen",
+    "cardCount": null,
+    "cardSlugs": [
+      "odegaard-scarlet-july-2026",
+      "raphinha-scarlet-july-2026",
+      "saka-scarlet-july-2026",
+      "zubimendi-scarlet-july-2026",
+      "nesta-scarlet-july-2026",
+      "carlos-scarlet-july-2026",
+      "vitinha-scarlet-july-2026",
+      "maldini-scarlet-july-2026",
+      "musiala-scarlet-july-2026",
+      "donnarumma-scarlet-july-2026",
+      "buffon-scarlet-july-2026"
+    ],
+    "description": "A July 5 recording opens Scarlet Packs repeatedly and supplies an eleven-card seen sample. The BLAZE-STORM redemption also awarded Scarlet Packs in that version.",
+    "order": 13,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Ops Gamer — New Code + Pack Opening",
+      "url": "https://www.youtube.com/watch?v=fAM7LxYD0t0",
+      "observedAt": "2026-07-05",
+      "note": "Repeated pack-opening session with individual results captured."
+    },
+    "seo": {
+      "title": "Scarlet Pack Details - Spin a Soccer Card Packs",
+      "description": "Scarlet Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Scarlet Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Scarlet Pack",
+        "Scarlet Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "slug": "aqua-pack",
+    "name": "Aqua Pack",
+    "image": "/images/video/summer-shop.webp",
+    "cost": null,
+    "currency": "Event currency / Robux",
+    "unlockRequirement": "Limited Summer event Shop listing.",
+    "rebirthRequirement": null,
+    "highestRarity": "Summer Exclusive label shown",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "Update 16 footage shows Aqua Pack in the Ice Cream Truck with a limited Summer Exclusive description. The exact event-currency price is too small in the checked frame to transcribe safely.",
+    "order": 14,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": 799,
+    "bundleQuantity": null,
+    "source": {
+      "label": "Namyee — Update 16 Summer cards",
+      "url": "https://www.youtube.com/watch?v=mCLA9zs7fR0",
+      "observedAt": "2026-07-04",
+      "note": "Ice Cream Truck Shop and Aqua Pack listing are visible."
+    },
+    "seo": {
+      "title": "Aqua Pack Details - Spin a Soccer Card Packs",
+      "description": "Aqua Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Aqua Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Aqua Pack",
+        "Aqua Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "slug": "bloodclaw-pack",
+    "name": "Bloodclaw Pack",
+    "image": "/images/video/summer-tournament-shop.webp",
+    "cost": 58,
+    "currency": "Tournament Tokens",
+    "unlockRequirement": "Tournament Shop listing in the July Summer build.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "A July Tournament Shop frame lists Bloodclaw Pack for 58 Tournament Tokens beside an expensive Lionel Messi reward.",
+    "order": 15,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": 1,
+    "source": {
+      "label": "Namyee — Update 16 Summer cards",
+      "url": "https://www.youtube.com/watch?v=mCLA9zs7fR0",
+      "observedAt": "2026-07-04",
+      "note": "Tournament Shop price is readable."
+    },
+    "seo": {
+      "title": "Bloodclaw Pack Details - Spin a Soccer Card Packs",
+      "description": "Bloodclaw Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Bloodclaw Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Bloodclaw Pack",
+        "Bloodclaw Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "slug": "lucid-pack",
+    "name": "Lucid Pack",
+    "image": "/images/video/tournament-panel.webp",
+    "cost": 21600000000000,
+    "currency": "Cash",
+    "unlockRequirement": "Late-game July Shop row; original rebirth gate not captured in the same frame.",
+    "rebirthRequirement": null,
+    "highestRarity": "Everdreaming label shown",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "July 16 Shop footage shows Lucid at $21.60T Cash with a 2,449 Robux option. It is preserved as a dated late-game price, not a current return-build listing.",
+    "order": 16,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": 0,
+    "bundleCost": 2449,
+    "bundleQuantity": null,
+    "source": {
+      "label": "JuniorGummy — 285 Nightmare Packs",
+      "url": "https://www.youtube.com/watch?v=jd0A6J6uDmY",
+      "observedAt": "2026-07-16",
+      "note": "Lucid row, $21.60T and 2,449 Robux are readable."
+    },
+    "seo": {
+      "title": "Lucid Pack Details - Spin a Soccer Card Packs",
+      "description": "Lucid Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Lucid Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Lucid Pack",
+        "Lucid Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "slug": "nightmare-pack",
+    "name": "Nightmare Pack",
+    "image": "/images/video/late-game-pack-shop.webp",
+    "cost": 32400000000000,
+    "currency": "Cash",
+    "unlockRequirement": "Late-game July Shop listing.",
+    "rebirthRequirement": null,
+    "highestRarity": "Everdreaming label shown",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "A July 16 recording opens 285 Nightmare Packs. The Shop row visibly lists $32.40T Cash and a 2,499 Robux purchase option.",
+    "order": 17,
+    "verificationStatus": "historical-record",
+    "availability": "historical",
+    "stockPerRefresh": 0,
+    "bundleCost": 2499,
+    "bundleQuantity": null,
+    "source": {
+      "label": "JuniorGummy — 285 Nightmare Packs",
+      "url": "https://www.youtube.com/watch?v=jd0A6J6uDmY",
+      "observedAt": "2026-07-16",
+      "note": "Nightmare Shop row and mass-opening session are directly visible."
+    },
+    "seo": {
+      "title": "Nightmare Pack Details - Spin a Soccer Card Packs",
+      "description": "Nightmare Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Nightmare Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Nightmare Pack",
+        "Nightmare Pack cards"
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "slug": "champions-pack",
+    "name": "Champions Pack",
+    "image": "/images/video/summer-tournament-shop.webp",
+    "cost": null,
+    "currency": null,
+    "unlockRequirement": "Multiple July 2026 guides place Champions as a premium mid/late Shop pack around the Summer Tournament window. Exact Cash/Robux row was not transcribed from the checked footage.",
+    "rebirthRequirement": null,
+    "highestRarity": "Not confirmed",
+    "cardCount": null,
+    "cardSlugs": [],
+    "description": "Champions Pack is widely listed as a July 5-era premium pack tied to the Summer Tournament period. It is stored as a historical community listing, not as a proven current Shop row after the Blackmoon return update.",
+    "order": 18,
+    "verificationStatus": "multi-source-reported",
+    "availability": "historical",
+    "stockPerRefresh": null,
+    "bundleCost": null,
+    "bundleQuantity": null,
+    "source": {
+      "label": "July 2026 Summer Tournament / Champions Pack reports",
+      "url": "https://spinasoccercard.wiki/cards/",
+      "observedAt": "2026-08-06",
+      "note": "Name and event timing are multi-source; live cost and current availability remain unconfirmed."
+    },
+    "seo": {
+      "title": "Champions Pack Details - Spin a Soccer Card Packs",
+      "description": "Champions Pack Details cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.",
+      "keywords": [
+        "Champions Pack Details",
+        "Spin a Soccer Card Packs",
+        "Spin a Soccer Card Champions Pack",
+        "Champions Pack cards"
+      ]
+    }
+  }
+]

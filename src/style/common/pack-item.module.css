@@ -1,0 +1,113 @@
+.pack {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: center;
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-panel);
+}
+.imageWrap {
+  position: relative;
+  display: grid;
+  height: 100%;
+  min-height: 152px;
+  place-items: center;
+  background:
+    radial-gradient(circle, oklch(69% 0.16 83 / 0.22), transparent 55%),
+    repeating-linear-gradient(
+      135deg,
+      var(--color-bg-deep) 0 8px,
+      oklch(17% 0.04 244) 8px 16px
+    );
+}
+.imageWrap img {
+  width: 94px;
+  height: 94px;
+  border-radius: 13px 4px 13px 4px;
+  object-fit: cover;
+  transform: rotate(-4deg);
+  box-shadow:
+    6px 7px 0 oklch(9% 0.025 248),
+    0 0 22px oklch(82% 0.17 83 / 0.18);
+}
+.imageWrap span {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: var(--color-gold);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+.body {
+  display: grid;
+  gap: 7px;
+  padding: 15px;
+}
+.body h3 {
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+.body p {
+  display: -webkit-box;
+  overflow: hidden;
+  max-width: 54ch;
+  color: var(--color-muted);
+  font-size: 0.8rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.body dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+}
+.body dt {
+  color: var(--color-muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+.body dd {
+  margin: 1px 0 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+.body > a {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 44px;
+  gap: 7px;
+  color: var(--color-primary);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+.compact {
+  grid-template-columns: 120px 1fr;
+}
+.compact .imageWrap {
+  min-height: 160px;
+}
+.compact .imageWrap img {
+  width: 92px;
+  height: 92px;
+}
+@media (max-width: 768px) {
+  .pack,
+  .compact {
+    grid-template-columns: 96px 1fr;
+  }
+  .imageWrap,
+  .compact .imageWrap {
+    min-height: 138px;
+  }
+  .imageWrap img,
+  .compact .imageWrap img {
+    width: 76px;
+    height: 76px;
+  }
+}

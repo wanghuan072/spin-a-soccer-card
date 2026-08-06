@@ -1,0 +1,339 @@
+[
+  {
+    "slug": "official-live-snapshot-august-2026",
+    "title": "Official Roblox Live Status",
+    "date": "2026-08-03",
+    "version": "Roblox API check",
+    "image": "/images/home/spin-a-soccer-card-stadium-hero.webp",
+    "imageAlt": "Official Spin a Soccer Card Roblox promotional image",
+    "eventStatus": "Live when checked on August 4",
+    "newCards": "The API does not publish a card count or roster",
+    "newPacks": "The API does not publish pack names",
+    "codeChanges": "Not included in the official listing API",
+    "balanceChanges": "Not included in the official listing API",
+    "summary": "The official Roblox API returned the game as live, updated August 3, with 262.6 million visits at the August 4 dated check.",
+    "details": [
+      "Universe ID: 9272693470; root place ID: 112490729816320.",
+      "Creator: confirmed Pixellar Studios | RSC community.",
+      "Genre: Simulation, Tycoon; maximum server size: 8.",
+      "The API check returned 5,015 concurrent players and 262,637,022 visits; these are time-specific counts, not permanent totals.",
+      "The official description confirms buying packs, revealing random cards, placing cards on plots, earning Cash and progressing to better packs."
+    ],
+    "verificationStatus": "official-source",
+    "source": {
+      "label": "Roblox Games API",
+      "url": "https://games.roblox.com/v1/games?universeIds=9272693470",
+      "observedAt": "2026-08-04",
+      "note": "Official universe metadata response."
+    },
+    "seo": {
+      "title": "Official Live Status Details - Spin a Soccer Card Update",
+      "description": "Official Live Status Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Official Live Status Details",
+        "Spin a Soccer Card Update",
+        "Official Live Status Update",
+        "Official Roblox Live Status"
+      ]
+    }
+  },
+  {
+    "slug": "wish-and-hero-crystal",
+    "title": "Wish Station and HERO-CRYSTAL",
+    "date": "2026-08-02",
+    "version": "August gameplay",
+    "image": "/images/evidence/wish-station.webp",
+    "imageAlt": "Gameplay view of the current Wish station and reward interface",
+    "eventStatus": "Seen in a live session",
+    "newCards": "Wish interface includes Card as one possible reward category",
+    "newPacks": "Packs appear among possible Wish reward categories",
+    "codeChanges": "HERO-CRYSTAL was entered in the live Codes field",
+    "balanceChanges": "No formula or balance number shown",
+    "summary": "A current gameplay recording documents the Wish station, its reward categories and the HERO-CRYSTAL code text without claiming an unseen reward.",
+    "details": [
+      "The Wish interface visibly includes Potion, Trophy, Packs, Gems, Cash, Trade Tokens and Card reward categories.",
+      "HERO-CRYSTAL is readable in the Shop code field.",
+      "The checked clip does not show a reward toast, so this site leaves the reward unconfirmed.",
+      "The code field says weekly codes are posted in the Community Server."
+    ],
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "Ops Gamer — Opening Wishes & New Code",
+      "url": "https://www.youtube.com/watch?v=m6L8YLl3zsU",
+      "observedAt": "2026-08-02",
+      "note": "Direct gameplay observation."
+    },
+    "seo": {
+      "title": "HERO-CRYSTAL Details - Spin a Soccer Card Update",
+      "description": "HERO-CRYSTAL Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "HERO-CRYSTAL Details",
+        "Spin a Soccer Card Update",
+        "HERO-CRYSTAL Update",
+        "Wish Station and HERO-CRYSTAL"
+      ]
+    }
+  },
+  {
+    "slug": "blackmoon-return-update",
+    "title": "Return Update: Bloodmoon, Blackmoon and Rebirth 19",
+    "date": "2026-07-30",
+    "version": "In-game update panel",
+    "image": "/images/evidence/blackmoon-update-panel.webp",
+    "imageAlt": "In-game update panel listing Bloodmoon cards, Blackmoon cards, packs and Rebirth 19",
+    "eventStatus": "Seen after the game returned",
+    "newCards": "New Bloodmoon cards and new Limited Blackmoon cards",
+    "newPacks": "The panel says New Packs; names and count are not listed",
+    "codeChanges": "New weekly code announced; WEAREBACK appears later in the recording",
+    "balanceChanges": "Rebirth 5+ inventory increased; booth tax shown as reduced to 0.5% from 2%",
+    "summary": "The in-game return panel documents the current content era and replaces the previous site's unsupported outage and copyright narrative.",
+    "details": [
+      "New Bloodmoon cards and new Limited Blackmoon cards.",
+      "A new Trophy, new Packs and Rebirth 19.",
+      "A new Weekly Calendar and Blessed Stocks in the Pack Shop.",
+      "A new Auto Craft Trophy option.",
+      "Performance optimization and other quality-of-life changes.",
+      "Walkthrough callouts also show free private servers, added inventory space for Rebirth 5 and above, and booth tax reduced to 0.5% from 2%."
+    ],
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "Ops Gamer — Game Is Back + New Code",
+      "url": "https://www.youtube.com/watch?v=ZvTLThC_xqA",
+      "observedAt": "2026-07-30",
+      "note": "Update panel and walkthrough callouts are readable in the recording."
+    },
+    "seo": {
+      "title": "Blackmoon & Rebirth 19 Details - Spin a Soccer Card Update",
+      "description": "Blackmoon & Rebirth 19 Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Blackmoon & Rebirth 19 Details",
+        "Spin a Soccer Card Update",
+        "Blackmoon & Rebirth 19 Update",
+        "Return Update: Bloodmoon, Blackmoon and Rebirth 19"
+      ]
+    }
+  },
+  {
+    "slug": "official-trade-world",
+    "title": "Trade World Confirmed as an Official Place",
+    "date": "2026-08-03",
+    "version": "Official place inventory",
+    "image": "/images/evidence/trade-card-offers.webp",
+    "imageAlt": "Current gameplay frame showing the in-game trade offer interface",
+    "eventStatus": "Official place is attached to the universe",
+    "newCards": "No card pool change claimed",
+    "newPacks": "No pack change claimed",
+    "codeChanges": "No code change claimed",
+    "balanceChanges": "Trade UI footage shows an offer flow and Trade Chat; exact market values remain community-driven",
+    "summary": "Trading is not merely a rumor: Roblox's official universe place inventory lists Spin a Soccer Card: Trade World as a second place.",
+    "details": [
+      "Trade World place ID: 124069176440953.",
+      "The root experience and Trade World belong to the same official universe.",
+      "Current gameplay footage shows Trade Chat, card offer slots, currency amount input and accept or decline controls.",
+      "A visible trade interface does not create an official price list; player demand still changes."
+    ],
+    "verificationStatus": "official-source",
+    "source": {
+      "label": "Roblox universe places API",
+      "url": "https://develop.roblox.com/v1/universes/9272693470/places?isUniverseCreation=false&limit=100&sortOrder=Asc",
+      "observedAt": "2026-08-04",
+      "note": "Official universe place inventory lists Trade World."
+    },
+    "seo": {
+      "title": "Official Trade World Details - Spin a Soccer Card Update",
+      "description": "Official Trade World Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Official Trade World Details",
+        "Spin a Soccer Card Update",
+        "Official Trade World Update",
+        "Trade World Confirmed as an Official Place"
+      ]
+    }
+  },
+  {
+    "slug": "update-8-admin-abuse",
+    "title": "Update 8 and Admin Event",
+    "date": "2026-05-04",
+    "version": "Update 8",
+    "image": "/images/video/update-8-log.webp",
+    "imageAlt": "Update 8 panel visible in May Spin a Soccer Card gameplay",
+    "eventStatus": "Historical May build",
+    "newCards": "Five Exclusive, one Secret Exclusive, five Verdant and three Sylvan entries stated by the panel",
+    "newPacks": "No complete pack list captured",
+    "codeChanges": "Not captured",
+    "balanceChanges": "Quality-of-life and bug-fix text visible; exact values not claimed",
+    "summary": "A dated gameplay entry of Update 8, including new card groups, Trade Chat inventory presets and admin-event systems.",
+    "details": [
+      "The in-game update panel lists new Exclusive, Secret Exclusive, Verdant and Sylvan card groups.",
+      "Trade Chat and preset inventory text are visible in the panel.",
+      "Wish, Spin Wheel and signed-card admin-event interfaces appear in the same build.",
+      "Small or obscured balance text is not expanded beyond what can be read."
+    ],
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "Update 8 Admin Abuse gameplay",
+      "url": "https://www.youtube.com/watch?v=XmpK31r9vpk",
+      "observedAt": "2026-05-04",
+      "note": "In-game update panel and related interfaces visible."
+    },
+    "seo": {
+      "title": "Update 8 & Admin Event Details - Spin a Soccer Card Update",
+      "description": "Update 8 & Admin Event Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Update 8 & Admin Event Details",
+        "Spin a Soccer Card Update",
+        "Update 8 & Admin Event Update",
+        "Update 8 and Admin Event"
+      ]
+    }
+  },
+  {
+    "slug": "summer-update-16",
+    "title": "Summer Update 16",
+    "date": "2026-07-04",
+    "version": "Update 16",
+    "image": "/images/video/summer-admin-event.webp",
+    "imageAlt": "Summer Update 16 admin event gameplay",
+    "eventStatus": "Historical Summer event",
+    "newCards": "Summer exclusives including Dybala, Doué and Arda Güler were shown",
+    "newPacks": "Aqua and Bloodclaw seen",
+    "codeChanges": "Not captured in the checked segment",
+    "balanceChanges": "Galactic interface described 11.5x money during Singularity",
+    "summary": "A broad Summer-era game version covering the Aqua pack, Tournament Shop, Ice Cream Truck, exclusive cards and event mutations.",
+    "details": [
+      "The Summer shop and Ice Cream Truck are visible in ordinary gameplay.",
+      "Bloodclaw Pack appears for 58 Tournament Tokens in the Tournament Shop.",
+      "Havertz 110 appears with a 0.025% overlay in the video session.",
+      "The mutation Index includes Divine, Bonded, Misprint, Cursed, Eclipsed, Sunburnt, Champion, UFO, Magma, Sweetened and Galactic."
+    ],
+    "verificationStatus": "gameplay-verified",
+    "source": {
+      "label": "Summer Update 16 gameplay",
+      "url": "https://www.youtube.com/watch?v=mCLA9zs7fR0",
+      "observedAt": "2026-07-04",
+      "note": "Direct gameplay and interface capture."
+    },
+    "seo": {
+      "title": "Summer Update 16 Details - Spin a Soccer Card Update",
+      "description": "Summer Update 16 Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Summer Update 16 Details",
+        "Spin a Soccer Card Update",
+        "Summer Update 16 Update",
+        "Summer Update 16"
+      ]
+    }
+  },
+  {
+    "slug": "scarlet-pack-and-blaze-storm",
+    "title": "Scarlet Pack and BLAZE-STORM Session",
+    "date": "2026-07-05",
+    "version": "Scarlet era",
+    "image": "/images/video/scarlet-pack-session.webp",
+    "imageAlt": "Scarlet Pack opening session showing multiple historical cards",
+    "eventStatus": "Historical pack session",
+    "newCards": "Eleven readable Scarlet pulls documented",
+    "newPacks": "Scarlet plus a multi-pack code reward bundle",
+    "codeChanges": "BLAZE-STORM successfully redeemed in the recording; later expired",
+    "balanceChanges": "No controlled balance change captured",
+    "summary": "A detailed video for Scarlet Pack card entries and one of the few code clips that captures a successful reward result.",
+    "details": [
+      "Readable pulls include Ødegaard, Raphinha, Saka, Zubimendi, Nesta, Carlos, Vitinha, Maldini, Musiala, Donnarumma and Buffon.",
+      "Ratings range from 107 to 109 in the captured session.",
+      "The BLAZE-STORM success popup lists two copies of many historical pack types plus Spins.",
+      "The code is archived as expired because later trackers no longer considered it active."
+    ],
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "Scarlet Pack opening and code video",
+      "url": "https://www.youtube.com/watch?v=fAM7LxYD0t0",
+      "observedAt": "2026-07-05",
+      "note": "Direct card-pull and code-result evidence."
+    },
+    "seo": {
+      "title": "Scarlet & BLAZE-STORM Details - Spin a Soccer Card Update",
+      "description": "Scarlet & BLAZE-STORM Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Scarlet & BLAZE-STORM Details",
+        "Spin a Soccer Card Update",
+        "Scarlet & BLAZE-STORM Update",
+        "Scarlet Pack and BLAZE-STORM Session"
+      ]
+    }
+  },
+  {
+    "slug": "nightmare-late-game-snapshot",
+    "title": "Lucid and Nightmare Late-Game",
+    "date": "2026-07-16",
+    "version": "Nightmare era",
+    "image": "/images/video/late-game-pack-shop.webp",
+    "imageAlt": "Late-game pack shop showing Lucid and Nightmare packs",
+    "eventStatus": "Historical late-game build",
+    "newCards": "Large Nightmare opening sample; full pool not inferred",
+    "newPacks": "Lucid and Nightmare; Champions Pack separately listed for the same Summer window",
+    "codeChanges": "Not captured",
+    "balanceChanges": "Lucid displayed $21.60T and 2,449 Robux; Nightmare displayed $32.40T and 2,499 Robux",
+    "summary": "A dated late-game economy view with readable Cash and Robux pack rows, tournament UI and expanded mutation tabs.",
+    "details": [
+      "Lucid and Nightmare rows are readable in the same Shop session.",
+      "GOAL!, Virus, Champion, UFO, Magma and Sweetened appear among late mutation tabs.",
+      "Opening 285 packs proves session outcomes, not complete odds.",
+      "Prices are historical and not presented as the current August shop.",
+      "Summer Part 2 guides also name Champions Pack, Drowned mutation and Rebirth 18 around this late-July window; those three records are stored separately with community-listing status."
+    ],
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "285 Nightmare Packs gameplay",
+      "url": "https://www.youtube.com/watch?v=jd0A6J6uDmY",
+      "observedAt": "2026-07-16",
+      "note": "Late-game Shop and mutation interfaces visible."
+    },
+    "seo": {
+      "title": "Lucid & Nightmare Details - Spin a Soccer Card Update",
+      "description": "Lucid & Nightmare Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Lucid & Nightmare Details",
+        "Spin a Soccer Card Update",
+        "Lucid & Nightmare Update",
+        "Lucid and Nightmare Late-Game"
+      ]
+    }
+  },
+  {
+    "slug": "trade-token-market-snapshot",
+    "title": "Trade Token Market",
+    "date": "2026-07-22",
+    "version": "Trade market era",
+    "image": "/images/video/trade-booth.webp",
+    "imageAlt": "Spin a Soccer Card Trade World booth and direct offer interface",
+    "eventStatus": "Historical market period",
+    "newCards": "No roster claim",
+    "newPacks": "No new pack claim",
+    "codeChanges": "Not captured",
+    "balanceChanges": "Booth purchase, after-tax amount and direct trade flows documented",
+    "summary": "A practical entry of Trade World booths, direct offers, Trade Token packages and tax-aware transactions.",
+    "details": [
+      "Booth purchases and direct two-player offers are both visible.",
+      "The interface shows after-tax proceeds, so listed price and seller receipt must remain separate.",
+      "Trade Token packages in that build were 100, 500 and 2,000 tokens for 90, 450 and 1,800 Robux.",
+      "These are dated shop game checks, not guaranteed current prices."
+    ],
+    "verificationStatus": "historical-record",
+    "source": {
+      "label": "Trade Tokens gameplay",
+      "url": "https://www.youtube.com/watch?v=jwJixWis6t8",
+      "observedAt": "2026-07-22",
+      "note": "Trade booth, tax and direct-offer interfaces captured."
+    },
+    "seo": {
+      "title": "Trade Token Market Details - Spin a Soccer Card Update",
+      "description": "Trade Token Market Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "keywords": [
+        "Trade Token Market Details",
+        "Spin a Soccer Card Update",
+        "Trade Token Market Update",
+        "Trade Token Market"
+      ]
+    }
+  }
+]
