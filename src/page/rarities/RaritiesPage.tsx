@@ -18,6 +18,8 @@ export function RaritiesPage() {
           "Card and pack tiers separated",
           "No income ranges invented",
         ]}
+        image="/images/evidence/current-card-inventory.webp"
+        imageAlt="In-game card inventory showing current card labels"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Rarities" }]}
       />
       <div className={`container ${styles.content}`}>

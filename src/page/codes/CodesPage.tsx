@@ -10,24 +10,21 @@ import styles from "@/style/page/codes/codes.module.css";
 
 const redeemSteps = [
   {
-    title: "Join Pixellar Studios",
-    body: "Open the official Pixellar Studios | RSC Roblox group and join before you redeem. Codes usually fail until you are in the group.",
-    image: "/images/gameplay/shop-overlay.webp",
-    alt: "Spin a Soccer Card Shop overlay on a live plot",
-  },
-  {
-    title: "Read the access message",
-    body: "Open the Codes box and follow the requirement shown on your account. Public trackers disagree about whether every code needs two rebirths.",
-    image: "/images/codes/code-menu.webp",
-    alt: "In-game Codes menu inside the Shop panel",
-  },
-  {
+    number: "02",
     title: "Open Shop → Codes",
     body: "On your plot, tap Shop on the side menu, scroll to the bottom, and find the Codes / Enter Code field.",
     image: "/images/codes/code-redemption.webp",
     alt: "In-game code redemption field with Redeem button",
   },
   {
+    number: "03",
+    title: "Read the access message",
+    body: "Open the Codes box and follow the requirement shown on your account. Public trackers disagree about whether every code needs two rebirths.",
+    image: "/images/codes/code-menu.webp",
+    alt: "In-game Codes menu inside the Shop panel",
+  },
+  {
+    number: "04",
     title: "Paste exactly and Redeem",
     body: "Codes are case-sensitive. Keep hyphens, zeros and punctuation, then hit Redeem and wait for the reward popup.",
     image: "/images/codes/code-field.webp",
@@ -35,28 +32,41 @@ const redeemSteps = [
   },
 ] as const;
 
+const codeScreens: Record<string, { src: string; alt: string }> = {
+  "HERO-CRYSTAL": {
+    src: "/images/evidence/hero-crystal-code.webp",
+    alt: "HERO-CRYSTAL entered in the Spin a Soccer Card Codes field",
+  },
+  WEAREBACK: {
+    src: "/images/evidence/weareback-code.webp",
+    alt: "WEAREBACK entered in the Spin a Soccer Card Codes field",
+  },
+};
+
 const faqs = [
   {
     q: "What do Spin a Soccer Card codes give?",
-    a: "Most weekly codes drop packs scaled to your rebirth level plus Spin Wheel spins. Some also add gems, Wish Tickets or Tournament Tokens.",
+    a: "Rewards vary by string. Dated game footage shows multi-pack rewards, while older code records also name spins, gems, Wish Tickets or Tournament Tokens. Read the success popup for the exact award.",
   },
   {
     q: "Why is my code not working?",
-    a: "Check group membership, rebirth count, spelling and whether the code already expired. If the field rejects a correct code, try another server after an update.",
+    a: "Check the live access message, exact spelling and whether the string has already expired. Some public trackers attach a two-rebirth gate to particular codes, but they do not agree on one rule for every code.",
   },
   {
     q: "Where do new codes drop?",
-    a: "Pixellar usually posts weekly codes in the Community Server / Discord and the Roblox group. Bookmark this page and redeem as soon as a fresh string appears.",
+    a: "The in-game Codes panel says weekly strings are posted in the Community Server. That panel is the clearest route; public code pages are useful only when their check dates are recent.",
   },
   {
     q: "Should I save codes for later?",
-    a: "No. Weekly codes often last only a few days. Redeem packs at your current rebirth so the free packs pull from a better pool.",
+    a: "Test a fresh string promptly. If its reward is described as packs aligned to your rebirth level, decide whether to redeem now or after the required rebirth; do not assume every pack code scales the same way.",
   },
 ] as const;
 
 export function CodesPage() {
   const ordered = sortCodesForDisplay(codes);
-  const working = ordered.filter((entry) => entry.status === "video-verified");
+  const fieldSightings = ordered.filter(
+    (entry) => entry.status === "video-verified",
+  );
   const tryCodes = ordered.filter((entry) => entry.status === "reported");
   const expired = ordered.filter((entry) => entry.status === "expired");
 
@@ -67,12 +77,12 @@ export function CodesPage() {
         title="Spin a Soccer Card Codes (August 2026)"
         description={pageTdk.codes.description}
         meta={[
-          `${working.length} working now`,
+          `${fieldSightings.length} recent field sightings`,
           `${tryCodes.length} worth a quick try`,
           `${expired.length} expired`,
         ]}
-        image="/images/evidence/hero-crystal-code.webp"
-        imageAlt="HERO-CRYSTAL typed in the live Spin a Soccer Card Codes field"
+        image="/images/codes/code-menu.webp"
+        imageAlt="In-game Spin a Soccer Card Codes menu"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Codes" }]}
       />
 
@@ -115,8 +125,7 @@ export function CodesPage() {
                 src="/images/codes/code-redemption.webp"
                 alt="Live Shop Codes panel with Enter a code field and Redeem button"
                 fill
-                sizes="(max-width: 960px) 100vw, 420px"
-                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 420px"
               />
               <figcaption>
                 In-game Shop → Codes panel (real redemption UI)
@@ -126,9 +135,9 @@ export function CodesPage() {
 
           <section aria-labelledby="working-codes">
             <div className={styles.sectionHead}>
-              <span>01 · Working codes</span>
+              <span>01 · Recent field sightings</span>
               <h2 id="working-codes">
-                Working Spin a Soccer Card codes for August 2026
+                Spin a Soccer Card codes seen in recent gameplay
               </h2>
               <p>
                 These exact strings were captured in the live Codes field
@@ -139,16 +148,25 @@ export function CodesPage() {
               </p>
             </div>
             <div className={styles.workingGrid}>
-              {working.map((entry) => (
-                <article className={styles.workingCard} key={entry.code}>
-                  <div className={styles.workingMedia}>
-                    <Image
-                      src={entry.image}
-                      alt={`${entry.code} shown in the live Spin a Soccer Card Codes field`}
-                      fill
-                      sizes="(max-width: 960px) 100vw, 480px"
-                    />
-                  </div>
+              {fieldSightings.map((entry) => {
+                const screen = codeScreens[entry.code];
+
+                return (
+                  <article className={styles.workingCard} key={entry.code}>
+                    <div className={styles.codeVisual}>
+                      {screen ? (
+                        <Image
+                          src={screen.src}
+                          alt={screen.alt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 46vw, 620px"
+                          quality={84}
+                        />
+                      ) : (
+                        <Icon name="pack" size={34} />
+                      )}
+                      <span>{entry.code}</span>
+                    </div>
                   <div className={styles.workingBody}>
                     <div className={styles.workingTop}>
                       <StatusBadge status={entry.status} />
@@ -163,51 +181,47 @@ export function CodesPage() {
                       <CodeCopyButton code={entry.code} />
                     </div>
                   </div>
-                </article>
-              ))}
+                  </article>
+                );
+              })}
             </div>
           </section>
 
-          <section aria-labelledby="try-codes">
-            <div className={styles.sectionHead}>
-              <span>02 · Quick tests</span>
-              <h2 id="try-codes">
-                Spin a Soccer Card codes worth trying in game
-              </h2>
-              <p>
-                Trackers disagree on these right now—some August lists still
-                show them working, others already mark them expired. Spend a few
-                seconds testing each; if Shop rejects the string, skip it.
-              </p>
-            </div>
-            <div className={styles.tryList}>
-              {tryCodes.map((entry) => (
-                <article className={styles.tryCard} key={entry.code}>
-                  <div className={styles.tryShot}>
-                    <Image
-                      src={entry.image}
-                      alt={`In-game Codes UI used when testing ${entry.code}`}
-                      fill
-                      sizes="120px"
-                    />
-                  </div>
-                  <div>
-                    <StatusBadge status={entry.status} />
-                    <code>{entry.code}</code>
-                  </div>
-                  <div>
-                    <p>{entry.reward}</p>
-                    <small>{entry.requirement}</small>
-                  </div>
-                  <CodeCopyButton code={entry.code} />
-                </article>
-              ))}
-            </div>
-          </section>
+          {tryCodes.length ? (
+            <section aria-labelledby="try-codes">
+              <div className={styles.sectionHead}>
+                <span>02 · Unresolved checks</span>
+                <h2 id="try-codes">
+                  Spin a Soccer Card codes awaiting a current result
+                </h2>
+                <p>
+                  A code appears here only while recent checks genuinely
+                  conflict. Once most current trackers archive it, it moves to
+                  the dated list below until a new successful redemption is
+                  captured.
+                </p>
+              </div>
+              <div className={styles.tryList}>
+                {tryCodes.map((entry) => (
+                  <article className={styles.tryCard} key={entry.code}>
+                    <div>
+                      <StatusBadge status={entry.status} />
+                      <code>{entry.code}</code>
+                    </div>
+                    <div>
+                      <p>{entry.reward}</p>
+                      <small>{entry.requirement}</small>
+                    </div>
+                    <CodeCopyButton code={entry.code} />
+                  </article>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <section className={styles.redeem} aria-labelledby="redeem-codes">
             <div className={styles.sectionHead}>
-              <span>03 · Player steps</span>
+              <span>{tryCodes.length ? "03" : "02"} · Player steps</span>
               <h2 id="redeem-codes">
                 How to redeem Spin a Soccer Card codes
               </h2>
@@ -216,20 +230,33 @@ export function CodesPage() {
                 from the real Shop / Codes UI—not a mockup.
               </p>
             </div>
+            <div className={styles.redeemPrerequisite}>
+              <span>01</span>
+              <div>
+                <strong>Join Pixellar Studios before opening the code box</strong>
+                <p>
+                  Join the official Pixellar Studios | RSC Roblox group first.
+                  Codes commonly fail while the account is outside the group.
+                </p>
+              </div>
+              <small>One-time account step</small>
+            </div>
             <ol className={styles.redeemSteps}>
               {redeemSteps.map((step) => (
                 <li key={step.title}>
-                  <div className={styles.redeemCopy}>
-                    <strong>{step.title}</strong>
-                    <p>{step.body}</p>
-                  </div>
                   <div className={styles.redeemShot}>
                     <Image
                       src={step.image}
                       alt={step.alt}
                       fill
-                      sizes="160px"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 52vw, 430px"
+                      quality={86}
                     />
+                    <span>{step.number}</span>
+                  </div>
+                  <div className={styles.redeemCopy}>
+                    <strong>{step.title}</strong>
+                    <p>{step.body}</p>
                   </div>
                 </li>
               ))}
@@ -240,7 +267,7 @@ export function CodesPage() {
                   src="/images/video/blaze-storm-redemption.webp"
                   alt="Successful BLAZE-STORM code redemption reward popup in gameplay"
                   fill
-                  sizes="(max-width: 960px) 100vw, 360px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 44vw, 360px"
                 />
               </figure>
               <div>
@@ -264,7 +291,7 @@ export function CodesPage() {
 
           <section aria-labelledby="expired-codes">
             <div className={styles.sectionHead}>
-              <span>04 · Archive</span>
+              <span>{tryCodes.length ? "04" : "03"} · Archive</span>
               <h2 id="expired-codes">
                 Expired Spin a Soccer Card codes archive
               </h2>
@@ -295,7 +322,7 @@ export function CodesPage() {
 
           <section aria-labelledby="codes-faq">
             <div className={styles.sectionHead}>
-              <span>05 · Fast answers</span>
+              <span>{tryCodes.length ? "05" : "04"} · Fast answers</span>
               <h2 id="codes-faq">
                 Spin a Soccer Card codes FAQ and requirements
               </h2>

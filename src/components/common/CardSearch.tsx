@@ -106,7 +106,7 @@ export function CardSearch({
         sort === "rating"
           ? (b.rating ?? -1) - (a.rating ?? -1)
           : sort === "income"
-            ? (b.baseIncome ?? -1) - (a.baseIncome ?? -1)
+            ? (b.observedIncome ?? -1) - (a.observedIncome ?? -1)
             : sort === "value"
               ? (b.tradeValue ?? -1) - (a.tradeValue ?? -1)
               : sort === "newest"
@@ -175,7 +175,7 @@ export function CardSearch({
             { value: "gameplay-verified", label: "Seen in game" },
             {
               value: "multi-source-reported",
-              label: "Popular targets",
+              label: "Cross-checked reports",
             },
             { value: "historical-record", label: "Older version" },
           ]}
@@ -258,7 +258,7 @@ export function CardSearch({
           choices={[
             { value: "name", label: "Name A–Z" },
             { value: "rating", label: "Rating" },
-            { value: "income", label: "Income" },
+            { value: "income", label: "Recorded income" },
             { value: "value", label: "Trade value" },
             { value: "newest", label: "Recently checked" },
           ]}

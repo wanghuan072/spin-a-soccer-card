@@ -133,7 +133,7 @@ img {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   :root {
     --space-gutter: 12px;
     --text-inner-title: clamp(1.4rem, 8vw, 1.95rem);

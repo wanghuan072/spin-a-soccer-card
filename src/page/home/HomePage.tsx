@@ -38,7 +38,7 @@ const faqs = [
   {
     question: "How do mutations work?",
     answer:
-      "Mutations roll when you pull a card and stack with its rarity label. Labels like Misprint, Frozen, Venomous or Divine can multiply income—keep the best stacks in your Bank before rebirth.",
+      "Mutation labels can change a card's treatment and, for some documented variants, its income. Only Galactic has a readable 11.5x figure in the captured Index; compare every other variant against the live card label before ranking it.",
   },
   {
     question: "What happens when I rebirth?",
@@ -48,7 +48,7 @@ const faqs = [
   {
     question: "How do I save cards before rebirth?",
     answer:
-      "Open the Card Bank (available from Rebirth 2 onward in most builds), stash your top earner, then confirm the reset warning so you do not wipe a mutated card by mistake.",
+      "A March game build unlocked the first Card Bank access at Rebirth 2, and its panel says stored cards survive rebirth. Check the current milestone and move your most useful keeper before confirming the reset warning.",
   },
   {
     question: "How do I trade cards?",
@@ -58,13 +58,17 @@ const faqs = [
   {
     question: "Where are new codes released?",
     answer:
-      "Join the Pixellar Studios group, finish at least 2 Rebirths, then redeem weekly codes in Shop. Fresh drops usually land in the Community Server or Discord first.",
+      "The in-game Codes panel says weekly strings are posted in the Community Server. Join the Pixellar Studios community, open Shop → Codes and follow any additional access message attached to the string you test.",
   },
 ];
 
 const statIcons = ["cards", "pack", "spark", "clock"] as const;
 
 export function HomePage() {
+  const cardsWithRecordedIncome = cards.filter(
+    (card) => card.observedIncome !== null || card.tradeValue !== null,
+  );
+
   return (
     <main id="main-content" className={styles.page}>
       <JsonLd data={[websiteSchema(), faqSchema(faqs)]} />
@@ -75,7 +79,7 @@ export function HomePage() {
           src="/images/official/game-thumbnail-1.webp"
           alt=""
           fill
-          priority
+          preload
           sizes="100vw"
         />
         <div className={`container ${styles.heroGrid}`}>
@@ -86,8 +90,8 @@ export function HomePage() {
               <span>Cards, Packs &amp; Codes</span>
             </h1>
             <p className={styles.heroSubtitle}>
-              Find card ratings, pack costs, working codes and rebirth routes
-              for today&apos;s game
+              Find readable card ratings, dated pack costs, recent code
+              sightings and versioned rebirth routes from real game captures.
             </p>
             <p className={styles.lead}>
               Open packs smarter, bank the right cards before rebirth, and check
@@ -265,20 +269,21 @@ export function HomePage() {
                 </Link>
               </div>
               <div className={styles.packRoute}>
-                {packs.slice(0, 6).map((pack, index) => (
+                {packs.slice(0, 6).map((pack) => (
                   <div className={styles.packStep} key={pack.slug}>
-                    <Link href={`/packs/${pack.slug}`} data-order={pack.order}>
+                    <Link href={`/packs/${pack.slug}`}>
                       <span>
                         <Image src={pack.image} alt="" fill sizes="86px" />
                       </span>
                       <strong>{pack.name}</strong>
                       <small>
-                        {pack.availability === "historical"
-                          ? "HISTORICAL"
-                          : "SEEN IN GAME"}
+                        {pack.availability === "dated-reward"
+                          ? "DATED REWARD"
+                          : pack.availability === "historical"
+                            ? "HISTORICAL"
+                            : "DATED SHOP"}
                       </small>
                     </Link>
-                    {index < 5 && <Icon name="arrow" size={20} />}
                   </div>
                 ))}
               </div>
@@ -299,7 +304,7 @@ export function HomePage() {
                 <Link href="/values">Spin a Soccer Card value guide</Link>{" "}
                 before accepting a booth offer.
               </p>
-              <ValueTable cards={cards.slice(0, 8)} compact />
+              <ValueTable cards={cardsWithRecordedIncome.slice(0, 8)} compact />
             </section>
 
             <div className={styles.systemGrid}>
@@ -360,7 +365,7 @@ export function HomePage() {
           <section className={`${styles.panel} ${styles.codesBand}`}>
             <div className={styles.panelHeading}>
               <div>
-                <span>Redeem in Shop after 2 Rebirths</span>
+                <span>Recent field sightings and quick in-game tests</span>
                 <h2>Latest Codes</h2>
               </div>
               <Link href="/codes">

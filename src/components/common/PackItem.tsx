@@ -21,7 +21,7 @@ export function PackItem({
           width={180}
           height={180}
         />
-        <span>{pack.order.toString().padStart(2, "0")}</span>
+        <span>{pack.availability === "historical" ? "ARCHIVE" : "DATED"}</span>
       </div>
       <div className={styles.body}>
         <StatusBadge status={pack.verificationStatus} />

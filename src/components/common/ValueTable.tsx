@@ -16,19 +16,17 @@ export function ValueTable({
       <table>
         <thead>
           <tr>
-            <th>#</th>
             <th>Card</th>
             <th>Rarity</th>
-            <th>Income</th>
+            <th>Recorded plot income</th>
             <th>Community value</th>
             <th>Trend</th>
             <th>Checked</th>
           </tr>
         </thead>
         <tbody>
-          {cards.map((card, index) => (
+          {cards.map((card) => (
             <tr key={card.slug}>
-              <td className={styles.rank}>{index + 1}</td>
               <th scope="row">
                 <span className={styles.cardCell}>
                   <Image src={card.image} alt="" width={28} height={28} />
@@ -36,7 +34,11 @@ export function ValueTable({
                 </span>
               </th>
               <td>{card.rarity}</td>
-              <td>{formatNumber(card.baseIncome, "$")}</td>
+              <td>
+                {card.observedIncome === null
+                  ? "Not captured"
+                  : `${formatNumber(card.observedIncome, "$")} / sec`}
+              </td>
               <td>{formatNumber(card.tradeValue)}</td>
               <td>
                 <span className={styles.trend} data-trend={card.valueTrend}>

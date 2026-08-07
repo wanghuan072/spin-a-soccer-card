@@ -2,14 +2,13 @@ import Link from "next/link";
 import { PageHero } from "@/components/common/PageHero";
 import { PackItem } from "@/components/common/PackItem";
 import { Icon } from "@/components/common/Icon";
-import { countByVerification, packs } from "@/lib/content";
+import { packs } from "@/lib/content";
 import { pageTdk } from "@/seo/tdk";
 import styles from "@/style/page/directory/directory.module.css";
 
 export function PacksPage() {
-  const current = packs.filter((pack) => pack.availability !== "historical");
+  const dated = packs.filter((pack) => pack.availability !== "historical");
   const historical = packs.filter((pack) => pack.availability === "historical");
-  const popular = countByVerification(packs, "multi-source-reported");
 
   return (
     <main id="main-content">
@@ -18,9 +17,8 @@ export function PacksPage() {
         title="Spin a Soccer Card Packs - Costs, Cards & Unlocks"
         description={pageTdk.packs.description}
         meta={[
-          `${current.length} current packs`,
+          `${dated.length} dated Shop or reward records`,
           `${historical.length} archive packs`,
-          `${popular} event packs`,
           "Odds shown in-game",
         ]}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Packs" }]}
@@ -38,15 +36,16 @@ export function PacksPage() {
         <section className={styles.section} id="progression">
           <div className={styles.heading}>
             <div>
-              <h2>Current Spin a Soccer Card packs and rewards</h2>
+              <h2>Recent Spin a Soccer Card Shop and reward records</h2>
               <p>
-                Cosmic, Ordan, Alpha and calendar rewards from the latest Shop
-                check—open a pack page for stock and known pulls.
+                These rows were readable in the July 30 game window. They are
+                dated Shop records, not a promise that the same stock, price or
+                calendar reward remains active after later updates.
               </p>
             </div>
           </div>
           <div className={styles.packsGrid}>
-            {current.map((pack) => (
+            {dated.map((pack) => (
               <PackItem key={pack.slug} pack={pack} />
             ))}
           </div>
@@ -56,9 +55,8 @@ export function PacksPage() {
             <div>
               <h2>Earlier Spin a Soccer Card pack rotations</h2>
               <p>
-                Older Shop and event packs such as Lucid, Nightmare and
-                Champions—useful when trading legacy cards or reading old
-                guides.
+                Older Shop and event packs such as Lucid and Nightmare are kept
+                only when a pack name, price or opening is visible in gameplay.
               </p>
             </div>
           </div>

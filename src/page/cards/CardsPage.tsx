@@ -16,7 +16,6 @@ export function CardsPage({
 }) {
   const official = countByVerification(cards, "official-source");
   const gameplay = countByVerification(cards, "gameplay-verified");
-  const popular = countByVerification(cards, "multi-source-reported");
   const historical = countByVerification(cards, "historical-record");
 
   return (
@@ -26,10 +25,10 @@ export function CardsPage({
         title="Spin a Soccer Card Cards - Details, Ratings & Index"
         description={pageTdk.cards.description}
         meta={[
-          `${cards.length} cards tracked`,
-          `${official + gameplay} current builds`,
-          `${popular} popular targets`,
-          `${historical} older pulls`,
+          `${cards.length} dated card records`,
+          `${official + gameplay} official or recent captures`,
+          `${historical} dated pulls`,
+          "1,300 index slots seen Aug 3",
         ]}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Cards" }]}
       />
@@ -37,8 +36,11 @@ export function CardsPage({
         <aside className={styles.notice}>
           <Icon name="cards" />
           <p>
-            <strong>Quick tip:</strong> Sort by rating or income, then open a
-            card to see its pack route, mutations and rebirth value. Jump to{" "}
+            <strong>Coverage note:</strong> The August 3 card inventory showed
+            1,300 index slots. This page contains only card faces that can be
+            read in official media or dated gameplay; it is not presented as a
+            complete 1,300-card list. Sort by rating or recorded income, then
+            open a card for its exact game window. Jump to{" "}
             <Link href="/packs">Packs</Link> for Shop costs or{" "}
             <Link href="/codes">Codes</Link> for free pulls.
           </p>
@@ -48,8 +50,9 @@ export function CardsPage({
             <div>
               <h2>Find Spin a Soccer Card card details</h2>
               <p>
-                Filter by rarity, pack, mutation, position and game version.
-                URL links keep your filters ready when you share a page.
+                Filter the dated records by label, pack, mutation, position
+                and game version. Recorded income is tied to the displayed copy
+                and may include mutations, trophies, weather or account boosts.
               </p>
             </div>
           </div>

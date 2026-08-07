@@ -272,6 +272,7 @@
   }
   .choiceRail button {
     flex: 0 0 auto;
+    min-height: 44px;
   }
   .compactFinder .filterBoard {
     margin-inline: 0;
@@ -281,8 +282,12 @@
     align-items: center;
   }
   .compactFinder .choiceRail button {
-    min-height: 36px;
+    min-height: 44px;
     font-size: 0.75rem;
+  }
+  .compactFinder .search input,
+  .compactFinder .reset {
+    min-height: 44px;
   }
   .compactFinder .choiceRail legend,
   .compactFinder .search > span,
@@ -291,7 +296,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .grid,
   .compact {
     grid-template-columns: 1fr;

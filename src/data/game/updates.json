@@ -2,29 +2,29 @@
   {
     "slug": "official-live-snapshot-august-2026",
     "title": "Official Roblox Live Status",
-    "date": "2026-08-03",
+    "date": "2026-08-07",
     "version": "Roblox API check",
     "image": "/images/home/spin-a-soccer-card-stadium-hero.webp",
     "imageAlt": "Official Spin a Soccer Card Roblox promotional image",
-    "eventStatus": "Live when checked on August 4",
+    "eventStatus": "Live in the official Roblox API when checked August 7",
     "newCards": "The API does not publish a card count or roster",
     "newPacks": "The API does not publish pack names",
     "codeChanges": "Not included in the official listing API",
     "balanceChanges": "Not included in the official listing API",
-    "summary": "The official Roblox API returned the game as live, updated August 3, with 262.6 million visits at the August 4 dated check.",
+    "summary": "The official Roblox API returned the experience as live on August 7 and identifies its latest universe update timestamp as August 3. Player and visit totals are intentionally omitted here because they change continuously.",
     "details": [
       "Universe ID: 9272693470; root place ID: 112490729816320.",
-      "Creator: confirmed Pixellar Studios | RSC community.",
-      "Genre: Simulation, Tycoon; maximum server size: 8.",
-      "The API check returned 5,015 concurrent players and 262,637,022 visits; these are time-specific counts, not permanent totals.",
-      "The official description confirms buying packs, revealing random cards, placing cards on plots, earning Cash and progressing to better packs."
+      "Creator shown by the Roblox API: Pixellar Studios | RSC community.",
+      "Genre: Simulation / Tycoon; maximum server size: 8.",
+      "The official description confirms buying packs, revealing random cards, placing cards on plots, earning Cash and progressing to better packs.",
+      "Concurrent players and visits are live counters, so this record does not preserve them as permanent update facts."
     ],
     "verificationStatus": "official-source",
     "source": {
       "label": "Roblox Games API",
       "url": "https://games.roblox.com/v1/games?universeIds=9272693470",
-      "observedAt": "2026-08-04",
-      "note": "Official universe metadata response."
+      "observedAt": "2026-08-07",
+      "note": "Official universe metadata response checked August 7, 2026."
     },
     "seo": {
       "title": "Official Live Status Details - Spin a Soccer Card Update",
@@ -153,18 +153,18 @@
   {
     "slug": "update-8-admin-abuse",
     "title": "Update 8 and Admin Event",
-    "date": "2026-05-04",
+    "date": "2026-05-02",
     "version": "Update 8",
     "image": "/images/video/update-8-log.webp",
     "imageAlt": "Update 8 panel visible in May Spin a Soccer Card gameplay",
     "eventStatus": "Historical May build",
-    "newCards": "Five Exclusive, one Secret Exclusive, five Verdant and three Sylvan entries stated by the panel",
+    "newCards": "Five Exclusive, one Secret Exclusive, five Verdant and three Silvane entries stated by the in-game panel",
     "newPacks": "No complete pack list captured",
     "codeChanges": "Not captured",
     "balanceChanges": "Quality-of-life and bug-fix text visible; exact values not claimed",
     "summary": "A dated gameplay entry of Update 8, including new card groups, Trade Chat inventory presets and admin-event systems.",
     "details": [
-      "The in-game update panel lists new Exclusive, Secret Exclusive, Verdant and Sylvan card groups.",
+      "The in-game panel dated May 2 lists new Exclusive, Secret Exclusive, Verdant and Silvane card groups; Silvane preserves the spelling displayed by the game.",
       "Trade Chat and preset inventory text are visible in the panel.",
       "Wish, Spin Wheel and signed-card admin-event interfaces appear in the same build.",
       "Small or obscured balance text is not expanded beyond what can be read."
@@ -174,7 +174,7 @@
       "label": "Update 8 Admin Abuse gameplay",
       "url": "https://www.youtube.com/watch?v=XmpK31r9vpk",
       "observedAt": "2026-05-04",
-      "note": "In-game update panel and related interfaces visible."
+      "note": "The video was published May 4; the in-game Update 8 panel itself is dated May 2."
     },
     "seo": {
       "title": "Update 8 & Admin Event Details - Spin a Soccer Card Update",
@@ -188,18 +188,18 @@
     }
   },
   {
-    "slug": "summer-update-16",
-    "title": "Summer Update 16",
+    "slug": "july-4-summer-admin-event",
+    "title": "July 4 Summer Admin Event",
     "date": "2026-07-04",
-    "version": "Update 16",
+    "version": "Dated Summer gameplay",
     "image": "/images/video/summer-admin-event.webp",
-    "imageAlt": "Summer Update 16 admin event gameplay",
-    "eventStatus": "Historical Summer event",
+    "imageAlt": "July 4 Summer admin event gameplay in Spin a Soccer Card",
+    "eventStatus": "Historical July 4 event session",
     "newCards": "Summer exclusives including Dybala, Doué and Arda Güler were shown",
     "newPacks": "Aqua and Bloodclaw seen",
     "codeChanges": "Not captured in the checked segment",
     "balanceChanges": "Galactic interface described 11.5x money during Singularity",
-    "summary": "A broad Summer-era game version covering the Aqua pack, Tournament Shop, Ice Cream Truck, exclusive cards and event mutations.",
+    "summary": "A dated July 4 gameplay session showing the Ice Cream Truck, Aqua Pack, Tournament Shop, Summer cards and event mutations without assigning an unsupported update number.",
     "details": [
       "The Summer shop and Ice Cream Truck are visible in ordinary gameplay.",
       "Bloodclaw Pack appears for 58 Tournament Tokens in the Tournament Shop.",
@@ -208,19 +208,19 @@
     ],
     "verificationStatus": "gameplay-verified",
     "source": {
-      "label": "Summer Update 16 gameplay",
+      "label": "Namyee — July 4 Summer admin event",
       "url": "https://www.youtube.com/watch?v=mCLA9zs7fR0",
       "observedAt": "2026-07-04",
-      "note": "Direct gameplay and interface capture."
+      "note": "Direct July 4 gameplay and interface capture; the checked video does not display an Update 16 log."
     },
     "seo": {
-      "title": "Summer Update 16 Details - Spin a Soccer Card Update",
-      "description": "Summer Update 16 Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
+      "title": "July 4 Summer Event Details - Spin a Soccer Card Update",
+      "description": "July 4 Summer Event Details cover dated card, pack, code and event changes, player impact and version notes in this Spin a Soccer Card update record.",
       "keywords": [
-        "Summer Update 16 Details",
+        "July 4 Summer Event Details",
         "Spin a Soccer Card Update",
-        "Summer Update 16 Update",
-        "Summer Update 16"
+        "July 4 Summer Event Update",
+        "July 4 Summer Admin Event"
       ]
     }
   },
@@ -270,16 +270,15 @@
     "imageAlt": "Late-game pack shop showing Lucid and Nightmare packs",
     "eventStatus": "Historical late-game build",
     "newCards": "Large Nightmare opening sample; full pool not inferred",
-    "newPacks": "Lucid and Nightmare; Champions Pack separately listed for the same Summer window",
+    "newPacks": "Lucid and Nightmare Shop rows shown in the same July 16 session",
     "codeChanges": "Not captured",
-    "balanceChanges": "Lucid displayed $21.60T and 2,449 Robux; Nightmare displayed $32.40T and 2,499 Robux",
+    "balanceChanges": "Lucid displayed $21.50T and 2,449 Robux ×10; Nightmare displayed $32.40T and 2,499 Robux ×10",
     "summary": "A dated late-game economy view with readable Cash and Robux pack rows, tournament UI and expanded mutation tabs.",
     "details": [
       "Lucid and Nightmare rows are readable in the same Shop session.",
       "GOAL!, Virus, Champion, UFO, Magma and Sweetened appear among late mutation tabs.",
-      "Opening 285 packs proves session outcomes, not complete odds.",
-      "Prices are historical and not presented as the current August shop.",
-      "Summer Part 2 guides also name Champions Pack, Drowned mutation and Rebirth 18 around this late-July window; those three records are stored separately with community-listing status."
+      "Opening 285 Nightmare Packs proves outcomes from that session, not a complete pool or official odds table.",
+      "The prices and bundles are retained as July 16 records and are not presented as the current August Shop."
     ],
     "verificationStatus": "historical-record",
     "source": {

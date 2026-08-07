@@ -3,20 +3,12 @@ import Link from "next/link";
 import { CardItem } from "@/components/common/CardItem";
 import { PageHero } from "@/components/common/PageHero";
 import { StatusBadge } from "@/components/common/StatusBadge";
-import {
-  cards,
-  formatNumber,
-  packs,
-  seeInGame,
-  verificationLabel,
-} from "@/lib/content";
+import { cards, formatNumber } from "@/lib/content";
 import type { SoccerPack } from "@/types/content";
 import styles from "@/style/page/detail/detail.module.css";
 
 export function PackDetailPage({ pack }: { pack: SoccerPack }) {
   const pool = cards.filter((card) => pack.cardSlugs.includes(card.slug));
-  const previous = packs.find((item) => item.order === pack.order - 1);
-  const next = packs.find((item) => item.order === pack.order + 1);
   const documentedRate = pack.cardCount
     ? Math.min(100, Math.round((pool.length / pack.cardCount) * 100))
     : null;
@@ -27,34 +19,47 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
   const versionLabel =
     pack.availability === "historical"
       ? "Historical rotation"
-      : pack.availability.replace(/-/g, " ");
-  const hasPriceMetrics =
-    pack.cost !== null || pack.bundleCost !== null || pack.stockPerRefresh !== null;
-  let sectionNo = 1;
-  const nextSection = () => String(sectionNo++).padStart(2, "0");
+      : pack.availability === "dated-shop"
+        ? `Shop record · ${pack.source.observedAt}`
+        : pack.availability === "dated-reward"
+          ? `Reward record · ${pack.source.observedAt}`
+          : "Availability not established";
+  const singlePrice =
+    pack.cost !== null
+      ? `${formatNumber(pack.cost, pack.currency === "Cash" ? "$" : "")}${
+          pack.currency && pack.currency !== "Cash" ? ` ${pack.currency}` : ""
+        }`
+      : "Not captured";
+  const bundlePrice =
+    pack.bundleCost !== null
+      ? `${pack.bundleCost} Robux${
+          pack.bundleQuantity ? ` / ${pack.bundleQuantity} packs` : ""
+        }`
+      : "Not captured";
+
   return (
     <main id="main-content">
       <PageHero
         eyebrow={
           pack.availability === "historical"
-            ? "Older pack guide"
-            : "Pack shop guide"
+            ? "Older pack record"
+            : "Pack shop record"
         }
         title={`Spin a Soccer Card ${pack.name} - Cost, Cards & Requirements`}
-        description={pack.seo.description}
+        description={pack.description}
         meta={[
           versionLabel,
-          `${pool.length} known cards`,
+          `${pool.length} documented cards`,
           `Checked ${pack.source.observedAt}`,
         ]}
-        image={pack.image}
-        imageAlt={`${pack.name} artwork`}
+        showVisual={false}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Packs", href: "/packs" },
           { label: pack.name },
         ]}
       />
+
       <div className={`container ${styles.content}`}>
         <article className={styles.article}>
           <section className={styles.overview}>
@@ -63,138 +68,95 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
                 src={pack.image}
                 alt={`${pack.name} shown in Spin a Soccer Card`}
                 fill
-                priority
-                sizes="(max-width:768px) 100vw,420px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 42vw, 420px"
+                quality={82}
               />
               <span className={styles.artStamp}>
-                #{String(pack.order).padStart(2, "0")}
-                <small>PACK</small>
+                {pack.availability === "historical" ? "ARCHIVE" : "DATED"}
+                <small>PACK RECORD</small>
               </span>
             </div>
+
             <div className={styles.facts}>
               <StatusBadge status={pack.verificationStatus} />
               <p className={styles.kicker}>{versionLabel}</p>
-              <h2>Spin a Soccer Card {pack.name} details</h2>
+              <h2>{pack.name} data</h2>
+
+              <div className={styles.topMetrics}>
+                <article>
+                  <span>Single-pack price</span>
+                  <strong>{singlePrice}</strong>
+                  <small>{pack.currency ?? "Currency not captured"}</small>
+                </article>
+                <article>
+                  <span>Robux bundle</span>
+                  <strong>{bundlePrice}</strong>
+                  <small>Recorded Shop product</small>
+                </article>
+                <article>
+                  <span>Robux per pack</span>
+                  <strong>
+                    {unitBundleCost !== null
+                      ? `${unitBundleCost.toFixed(1)} Robux`
+                      : "Not available"}
+                  </strong>
+                  <small>Calculated only from a readable bundle</small>
+                </article>
+              </div>
+
               <dl>
-                {pack.cost !== null ? (
-                  <div>
-                    <dt>Pack cost</dt>
-                    <dd>
-                      {formatNumber(
-                        pack.cost,
-                        pack.currency === "Cash" ? "$" : "",
-                      )}
-                      {pack.currency && pack.currency !== "Cash"
-                        ? ` ${pack.currency}`
-                        : null}
-                    </dd>
-                  </div>
-                ) : null}
-                {pack.currency && pack.cost === null ? (
-                  <div>
-                    <dt>Currency</dt>
-                    <dd>{pack.currency}</dd>
-                  </div>
-                ) : null}
-                {pack.rebirthRequirement !== null ? (
-                  <div>
-                    <dt>Rebirth gate</dt>
-                    <dd>
-                      {pack.rebirthRequirement === 0
+                <div>
+                  <dt>Availability</dt>
+                  <dd>{versionLabel}</dd>
+                </div>
+                <div>
+                  <dt>Stock shown</dt>
+                  <dd>
+                    {pack.stockPerRefresh !== null
+                      ? `${pack.stockPerRefresh} per refresh`
+                      : "Not captured"}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Rebirth gate</dt>
+                  <dd>
+                    {pack.rebirthRequirement === null
+                      ? "Not established"
+                      : pack.rebirthRequirement === 0
                         ? "No rebirth gate"
                         : `Rebirth ${pack.rebirthRequirement}`}
-                    </dd>
-                  </div>
-                ) : null}
+                  </dd>
+                </div>
                 <div>
                   <dt>Highest label</dt>
                   <dd>{pack.highestRarity}</dd>
                 </div>
-                {pack.stockPerRefresh !== null ? (
-                  <div>
-                    <dt>Stock shown</dt>
-                    <dd>{pack.stockPerRefresh}</dd>
-                  </div>
-                ) : null}
-                {pack.bundleCost ? (
-                  <div>
-                    <dt>Bundle</dt>
-                    <dd>
-                      {pack.bundleQuantity ?? "?"} for {pack.bundleCost} Robux
-                    </dd>
-                  </div>
-                ) : null}
                 <div>
-                  <dt>Known cards</dt>
+                  <dt>Documented cards</dt>
                   <dd>{pool.length}</dd>
                 </div>
-                {pack.cardCount !== null ? (
-                  <div>
-                    <dt>Claimed pool size</dt>
-                    <dd>{pack.cardCount}</dd>
-                  </div>
-                ) : null}
+                <div>
+                  <dt>Listed pool size</dt>
+                  <dd>{pack.cardCount ?? "Not captured"}</dd>
+                </div>
+                <div>
+                  <dt>Unlock requirement</dt>
+                  <dd>{pack.unlockRequirement}</dd>
+                </div>
+                <div>
+                  <dt>Last game check</dt>
+                  <dd>{pack.source.observedAt}</dd>
+                </div>
               </dl>
             </div>
           </section>
+
           <section>
             <div className={styles.sectionHeading}>
-              <span>{nextSection()}</span>
+              <span>01</span>
               <div>
-                <h2>Economy and access</h2>
-                <p>Shop prices and access rules shown for this game build.</p>
-              </div>
-            </div>
-            {hasPriceMetrics ? (
-              <div className={styles.metricRow}>
-                {pack.cost !== null ? (
-                  <article>
-                    <span>Single-pack price</span>
-                    <strong>
-                      {formatNumber(
-                        pack.cost,
-                        pack.currency === "Cash" ? "$" : "",
-                      )}
-                    </strong>
-                    <small>{pack.currency ?? seeInGame}</small>
-                  </article>
-                ) : null}
-                {pack.bundleCost ? (
-                  <article>
-                    <span>Bundle price</span>
-                    <strong>{pack.bundleCost} R$</strong>
-                    <small>
-                      {unitBundleCost
-                        ? `${unitBundleCost.toFixed(1)} Robux per pack`
-                        : "Robux bundle"}
-                    </small>
-                  </article>
-                ) : null}
-                <article>
-                  <span>Availability</span>
-                  <strong>{versionLabel}</strong>
-                  <small>
-                    {pack.stockPerRefresh === null
-                      ? seeInGame
-                      : `${pack.stockPerRefresh} shown per refresh`}
-                  </small>
-                </article>
-              </div>
-            ) : null}
-            <div className={styles.note}>
-              <strong>Unlock requirement</strong>
-              <p>{pack.unlockRequirement}</p>
-            </div>
-          </section>
-          <section>
-            <div className={styles.sectionHeading}>
-              <span>{nextSection()}</span>
-              <div>
-                <h2>Known Spin a Soccer Card pulls from {pack.name}</h2>
-                <p>
-                  Every card below has its own page; this is not presented as a
-                  complete pull pool.
-                </p>
+                <h2>{pack.name} card records</h2>
+                <p>Card faces connected to this dated pack record.</p>
               </div>
             </div>
             {pool.length ? (
@@ -208,8 +170,8 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
                     </strong>
                     <span>
                       {pack.cardCount
-                        ? `${pool.length} of ${pack.cardCount} listed pool slots known`
-                        : `${pool.length} readable pulls; complete pool size unknown`}
+                        ? `${pool.length} of ${pack.cardCount} listed slots have card records`
+                        : `${pool.length} card faces are readable; the complete pool size is not established`}
                     </span>
                   </div>
                   {documentedRate !== null ? (
@@ -226,77 +188,66 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
               </>
             ) : (
               <div className={styles.note}>
-                <strong>No card list yet.</strong>
+                <strong>No readable card faces.</strong>
                 <p>
-                  The pack name or artwork is available, but no card names are
-                  clear enough to publish.
+                  The pack artwork is documented, but no individual card name is
+                  clear enough to add to this pack record.
                 </p>
               </div>
             )}
           </section>
+
           <section>
             <div className={styles.sectionHeading}>
-              <span>{nextSection()}</span>
+              <span>02</span>
               <div>
-                <h2>Pack status</h2>
-                <p>When this Shop row was last checked.</p>
+                <h2>{pack.name} record notes</h2>
+                <p>Pack-specific facts retained for the checked game window.</p>
               </div>
             </div>
-            <div className={styles.tableWrap}>
-              <table>
-                <tbody>
-                  <tr>
-                    <th>Status</th>
-                    <td>{verificationLabel(pack.verificationStatus)}</td>
-                  </tr>
-                  <tr>
-                    <th>Last checked</th>
-                    <td>{pack.source.observedAt}</td>
-                  </tr>
-                  <tr>
-                    <th>Availability</th>
-                    <td>{pack.availability.replace(/-/g, " ")}</td>
-                  </tr>
-                  <tr>
-                    <th>Unlock note</th>
-                    <td>{pack.unlockRequirement}</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className={styles.recordNotes}>
+              <article>
+                <span>Pack record</span>
+                <p>{pack.description}</p>
+              </article>
+              <article>
+                <span>Access</span>
+                <p>{pack.unlockRequirement}</p>
+              </article>
+              <article>
+                <span>Pool limit</span>
+                <p>
+                  {pack.cardCount !== null
+                    ? `${pack.name} lists ${pack.cardCount} pool slots for this game window; ${pool.length} currently have readable card records.`
+                    : `${pack.name} has ${pool.length} readable card records, but the complete pool size was not visible.`}
+                </p>
+              </article>
             </div>
           </section>
         </article>
+
         <aside className={styles.sidebar}>
           <section className={styles.sidebarLead}>
-            <span>{String(pack.order).padStart(2, "0")}</span>
+            <span>{pack.availability === "historical" ? "OLD" : "DATE"}</span>
             <h2>{pack.name}</h2>
-            <p>
-              Compare Cash cost with your current EPS, then open Odds before a
-              big spend.
-            </p>
+            <p>{singlePrice} · {versionLabel}</p>
           </section>
           <section>
-            <h2>Nearby packs</h2>
+            <h2>Connected records</h2>
             <ul>
-              {previous ? (
-                <li>
-                  <Link href={`/packs/${previous.slug}`}>
-                    Previous: {previous.name}
-                  </Link>
-                </li>
-              ) : null}
-              {next ? (
-                <li>
-                  <Link href={`/packs/${next.slug}`}>Next: {next.name}</Link>
-                </li>
-              ) : null}
               {pool[0] ? (
                 <li>
                   <Link href={`/cards/${pool[0].slug}`}>
-                    {pool[0].name} from this pack
+                    Open {pool[0].name}
                   </Link>
                 </li>
               ) : null}
+              <li>
+                <Link href="/packs">Open all dated pack records</Link>
+              </li>
+              <li>
+                <Link href="/updates">Check matching game updates</Link>
+              </li>
             </ul>
           </section>
         </aside>

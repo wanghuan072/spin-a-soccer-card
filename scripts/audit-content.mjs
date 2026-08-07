@@ -286,7 +286,7 @@ const pageLinks = Object.values(data)
   .flat()
   .filter((entry) => entry?.source?.url).length;
 const missingCardNumbers = data.cards.filter(
-  (entry) => entry.baseIncome === null || entry.tradeValue === null,
+  (entry) => entry.observedIncome === null || entry.tradeValue === null,
 ).length;
 
 console.log(`Collections checked: ${files.length}`);
@@ -295,7 +295,7 @@ console.log(
 );
 console.log(`Dated page links checked: ${pageLinks}`);
 console.log(
-  `Cards retaining unknown income or trade values: ${missingCardNumbers}/${data.cards.length}`,
+  `Cards retaining unknown recorded income or trade values: ${missingCardNumbers}/${data.cards.length}`,
 );
 console.log(`Content errors: ${errors.length}`);
 if (errors.length) {

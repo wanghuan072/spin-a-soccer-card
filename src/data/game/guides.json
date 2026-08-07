@@ -4,43 +4,43 @@
     "title": "Spin a Soccer Card Beginner Guide",
     "category": "Getting Started",
     "summary": "Learn the pack-to-plot loop, read Shop and Index menus, equip for income, and know when to rebirth—without chasing outdated card lists.",
-    "image": "/images/gameplay/shop-overlay.webp",
+    "image": "/images/guides/beginner-guide-hero.webp",
     "readTime": "10 min read",
     "lastReviewedAt": "2026-08-06",
     "sections": [
       {
         "heading": "Start with the pack-to-plot loop",
-        "body": "Spin a Soccer Card runs on a simple loop: spend Cash (or Robux) on a pack, open a random card, place strong cards on your plot, earn Cash per second, then buy better packs. The Roblox listing still describes that loop clearly. Treat it as your foundation—pack names, stock and star cards can shift after updates, but the loop stays the same.",
+        "body": "The official Roblox listing describes the durable loop: buy a pack, tap to reveal a random card, place cards on your plot and use the Cash they earn to buy stronger packs. Start by filling every open plot slot; an empty slot earns nothing. After each opening, compare the visible Cash-per-second label with your weakest placed card instead of assuming a higher rating always produces the better income result.",
         "image": "/images/gameplay/pack-opening.webp",
         "imageAlt": "Opening a pack and revealing a card in Spin a Soccer Card"
       },
       {
         "heading": "Read the Pack Shop before you buy",
-        "body": "Open Shop on the side of your plot. Each pack row usually shows artwork, name, rarity tier, stock left, Cash price, a multi-pack Robux option, and Odds. Check stock and the refill timer before a big spend. Tap Odds for the live rarity mix on your server—do not trust an old screenshot from another update.",
+        "body": "Open Shop from the left-side game menu and read one row from left to right. Current gameplay has shown a pack name and tier label, stock remaining, a Cash price, a ten-pack Robux option and an Odds button. Stock tells you how many purchases remain before the refresh; it does not improve the next roll. Open Odds in your own server before a large purchase because captured prices and pack rotations can survive online long after the Shop has changed.",
         "image": "/images/evidence/current-pack-shop.webp",
         "imageAlt": "Live Pack Shop rows with stock, Cash price and Robux bundle options"
       },
       {
         "heading": "Use Index and inventory sorts",
-        "body": "Open Index to browse labels you own and compare what the current game build shows. Inventory sort modes such as Name, Best, Rarity and Mutations help you find keepers fast. If an older wiki page names a card you cannot find, recheck Index in your session before grinding for it.",
+        "body": "Index is the safest place to check names and labels that exist in the game build you are playing. The captured inventory also exposes Name, Best, Rarity and Mutations sorts. Use Best to make a quick income pass, then switch to Mutations before selling duplicates so a visually similar card with a special label does not disappear with the ordinary copy. If an older video names a card that no longer appears, do not plan a grind around it until the live Index shows it.",
         "image": "/images/evidence/current-card-inventory.webp",
         "imageAlt": "Card inventory panel with sort options in Spin a Soccer Card"
       },
       {
         "heading": "Equip for income, not just artwork",
-        "body": "Place cards on plot slots and read the income label above each one. Replace the weakest slot whenever a pull clearly earns more. Equip Best is a useful first pass, then manually keep mutated or event cards that matter for collection or trade even if their income is lower.",
+        "body": "Place cards on the plot and read the income printed above each display. Replace the weakest number first. Equip Best is a useful starting action, but it cannot decide whether you care about a limited design, mutation, rebirth ingredient or trade listing. Before selling the displaced card, check its label in inventory and decide whether it belongs in the Bank, in a trade plan or in the sell pile.",
         "image": "/images/evidence/card-wildenz.webp",
         "imageAlt": "High-income Wildenz card display used as a plot income example"
       },
       {
         "heading": "Bank keepers before you rebirth",
-        "body": "Rebirth resets progress for stronger long-term growth and often unlocks better packs. Before you rebirth, bank cards you want to keep, note the next rebirth requirement, and plan which Shop tier you will farm next. Some code listings attach a Rebirth 2 gate to specific strings, so follow the message shown by the live Codes field.",
+        "body": "A captured Bank panel says stored cards are not lost when you rebirth, while the old Rebirth panels warn that cards, packs and money outside that protection are lost. Bank slots were shown as milestone unlocks, so storage is deliberately limited. Move only the cards you genuinely need after the reset: a strong first earner, a hard-to-replace variant or a card named by the next live requirement. Do not use an old rebirth table as a shopping list—the recorded Rebirth 4 Cash requirement changed between March and April builds.",
         "image": "/images/video/card-bank.webp",
         "imageAlt": "Card Bank panel used to protect keepers before a rebirth"
       },
       {
         "heading": "Grab free packs from codes early",
-        "body": "The Shop includes a Codes field and says weekly codes are posted in the Community Server. Open Shop, scroll to Codes, paste a recent string exactly and read the response before assuming it works. Some recorded rewards included packs and Spin Wheel spins, but rewards and access gates vary by code. Open the Codes page for dated sightings and the full redeem steps.",
+        "body": "The Shop contains a Codes field and tells players that weekly strings are posted in the Community Server. Paste the newest candidate exactly, including hyphens and capitalization, then read the game response. A July BLAZE-STORM recording visibly delivered two of many pack tiers, but that old success does not make the code current today. Use code rewards as a quick income jump when they work: open the packs, compare the pulls and update the plot before returning to the Cash grind.",
         "image": "/images/codes/code-redemption.webp",
         "imageAlt": "In-game Shop Codes field with Redeem button"
       }
@@ -102,43 +102,43 @@
     "title": "Spin a Soccer Card Codes Guide",
     "category": "Codes",
     "summary": "Use Shop → Codes, preserve exact strings, distinguish a field sighting from a successful redemption, and handle conflicting code lists safely.",
-    "image": "/images/evidence/hero-crystal-code.webp",
+    "image": "/images/guides/codes-guide-hero.webp",
     "readTime": "8 min read",
     "lastReviewedAt": "2026-08-06",
     "sections": [
       {
         "heading": "What codes give you",
-        "body": "The in-game Codes panel says weekly strings are posted in the Community Server. A captured BLAZE-STORM redemption awarded multiple packs, while other public lists describe spins, gems, Wish Tickets or Tournament Tokens. Treat every reward as code-specific and confirm it in the success popup instead of applying one reward pattern to every string.",
+        "body": "The in-game Codes panel says weekly strings are posted in the Community Server. A July BLAZE-STORM recording shows the game delivering two copies across many named pack tiers; other dated strings have been described with spins, gems, Wish Tickets or Tournament Tokens. Rewards are code-specific. Record only what the success popup on your screen actually grants, because a tracker can preserve an old reward long after the string stops working.",
         "image": "/images/video/blaze-storm-redemption.webp",
         "imageAlt": "Successful code redemption reward popup showing packs and spins"
       },
       {
         "heading": "Read the access message first",
-        "body": "Open Shop and scroll to the Codes panel. The panel itself points players to the Community Server, while public trackers disagree about whether every code needs community membership or two rebirths. If a correctly pasted string fails, read the live response and check the requirement attached to that specific code before calling it expired.",
+        "body": "Open Shop and scroll down to Codes. The panel points to the Community Server, while current public trackers disagree over whether community membership alone is enough or whether some strings also require two rebirths. Do not merge those conditions into one universal rule. If a correctly pasted string fails, read the exact response for that string, satisfy only the condition it names, then try once more before moving on.",
         "image": "/images/codes/code-menu.webp",
         "imageAlt": "Codes menu section inside the in-game Shop panel"
       },
       {
         "heading": "Redeem in Shop → Codes",
-        "body": "On your plot, open Shop, scroll to Codes, paste the string exactly, and tap Redeem. Keep capitalization, hyphens, zeros and punctuation. A working code shows a reward popup right away. Then open the free packs from your current Shop tier.",
+        "body": "From your plot, choose Shop, scroll to the blue Codes panel, paste the string and press Redeem. Keep capitalization, hyphens, exclamation marks and the difference between the letter O and zero. A successful attempt produces reward text immediately; a field sighting with no result popup proves only the spelling. Open awarded packs while the result is still fresh so you can match the delivered tier and quantity to the message.",
         "image": "/images/codes/code-redemption.webp",
         "imageAlt": "Enter a code field and Redeem button in the live Shop UI"
       },
       {
         "heading": "Separate sightings from successful redeems",
-        "body": "HERO-CRYSTAL and WEAREBACK were captured as exact text inside the live Codes field, but the selected clips do not show their result popups. That confirms the spelling and date of the sighting—not current acceptance or a reward amount. Test each once, then trust the message returned by your server.",
+        "body": "HERO-CRYSTAL and WEAREBACK are readable inside the live entry field in late-July recordings, but those selected clips do not include a reward result. They are useful dated spellings, not active-code claims. This distinction matters when a video title says “new code” yet the edit cuts away before the response. Test a visible string once and let the server response decide whether it is working, gated or expired.",
         "image": "/images/evidence/hero-crystal-code.webp",
         "imageAlt": "HERO-CRYSTAL typed into the live Spin a Soccer Card Codes field"
       },
       {
         "heading": "Handle conflicting lists conservatively",
-        "body": "DRAGON-PRIME, OWL-HAPPY, BIGUPDATECOMING and other July strings move between active and expired tables depending on the tracker. Keep them in a try-in-game group instead of calling them confirmed. Test each exact string once; if the field rejects it after any displayed requirement is met, move on.",
+        "body": "DRAGON-PRIME, OWL-HAPPY, BIGUPDATECOMING, RAVEN-COMET and several older strings move between active and expired tables depending on the publisher and crawl date. That disagreement is a warning, not permission to choose the longest list. Start with the newest dated candidate, test each exact string once, and stop after the game rejects it with any named requirement already satisfied.",
         "image": "/images/evidence/weareback-code.webp",
         "imageAlt": "WEAREBACK shown in the live Codes field during return update gameplay"
       },
       {
         "heading": "Keep dated redemption context",
-        "body": "BLAZE-STORM has direct July redemption footage, yet newer public trackers disagree on its present status. That is why the Codes page separates successful historical redemptions, dated field sightings, conflict strings and consistently expired entries. Use the archive for context and test only the short current list.",
+        "body": "BLAZE-STORM has a real July reward sequence, yet later trackers disagree about whether it remains active. That is the practical difference between a successful historical redemption and a current working code. Use the Codes page’s short try-in-game group first, keep the long expired archive for spelling checks, and never spend several minutes re-entering a string that the live field has already rejected.",
         "image": "/images/codes/code-field.webp",
         "imageAlt": "Cropped in-game code entry field used when testing archive strings"
       }

@@ -23,27 +23,27 @@ const pages: Record<
     eyebrow: "Legal · Privacy",
     title: "Privacy Policy",
     description:
-      "How this independent player wiki handles information, browser-based tools, external services and privacy questions.",
+      "How this independent player wiki handles technical information, external services, contact email and privacy questions.",
     sections: [
       {
         heading: "Information we collect",
         paragraphs: [
           "This website does not require an account and does not provide comments, direct messages or a submission form. You can browse the public pages without giving us your name, address, telephone number or Roblox account information.",
-          "The calculators operate in your browser. Values entered into those tools are used to produce the result shown on the page and are not intentionally submitted to a site-owned account database.",
+          "The public card, pack, code and guide pages do not ask you to submit gameplay inventories, trade lists, passwords or Roblox account credentials.",
         ],
       },
       {
         heading: "Technical and usage information",
         paragraphs: [
           "Like most websites, the hosting provider may process basic technical records such as an IP address, browser type, device type, requested URL, referring page and request time. These records may be used to deliver the website, maintain security, investigate errors and prevent abusive traffic.",
-          "If analytics, advertising or another third-party service is introduced, this policy will be updated to identify the service and explain the information it may process before that service is treated as part of the normal website experience.",
+          "The site may use third-party measurement or delivery services that process device and usage information under their own terms. Those services are used to understand page performance, maintain the site and measure general traffic rather than to create a public player profile.",
         ],
       },
       {
         heading: "Cookies and local storage",
         paragraphs: [
           "The current site does not use a user-account cookie. Browser settings, hosting infrastructure or future third-party services may use cookies or similar storage for essential delivery, security, measurement or preference features.",
-          "You can restrict or clear browser storage through your browser settings. Doing so may reset local preferences or calculator values but should not prevent access to the public site content.",
+          "You can restrict or clear browser storage through your browser settings. Doing so may reset local preferences or measurement identifiers but should not prevent access to the public site content.",
         ],
       },
       {
@@ -66,7 +66,7 @@ const pages: Record<
     eyebrow: "Legal · Terms",
     title: "Terms of Service",
     description:
-      "The rules and limitations that apply when using this fan-made game database, its written content and browser tools.",
+      "The rules and limitations that apply when using this fan-made game database, its written content and external links.",
     sections: [
       {
         heading: "Acceptance and purpose",
@@ -79,7 +79,7 @@ const pages: Record<
         heading: "Accuracy and version-dependent information",
         paragraphs: [
           "Game prices, availability, codes, rewards, interfaces and progression requirements may change without notice. Dates show the game version covered by an entry, but they do not guarantee that the same information remains current in every server or region.",
-          "Community values, calculator results and trade observations are estimates or historical records. They are not official prices, guaranteed returns, financial advice or a promise that another player will accept a trade.",
+          "Community values and trade observations are estimates or historical records. They are not official prices, guaranteed returns, financial advice or a promise that another player will accept a trade.",
         ],
       },
       {
@@ -156,7 +156,7 @@ const pages: Record<
         heading: "Our purpose",
         paragraphs: [
           "Spin a Soccer Card Wiki is an independent, fan-made reference built for players who want useful answers without having to guess whether a code, card name, pack price or progression table came from the current game version.",
-          "The site brings cards, packs, guides, update notes and player tools into one searchable structure. Its purpose is to make version differences visible, not to present every community claim as settled fact.",
+          "The site brings cards, packs, guides, update notes and progression records into one searchable structure. Its purpose is to make version differences visible, not to present every community claim as settled fact.",
         ],
       },
       {
@@ -168,7 +168,7 @@ const pages: Record<
           "Card names, ratings, positions, rarity labels, displayed income and known acquisition routes.",
           "Pack costs, stock, unlock notes, documented pulls and historical availability.",
           "Codes, rebirths, mutations, game passes, trading systems and update history.",
-          "Practical guides and calculators that state their assumptions and limitations.",
+          "Practical guides that explain player decisions and state version limits.",
         ],
       },
       {
@@ -240,10 +240,11 @@ export function LegalPage({ kind }: { kind: LegalKind }) {
         title={page.title}
         description={page.description}
         meta={[
-          "Last updated August 6, 2026",
+          "Last updated August 7, 2026",
           "Plain-language policy",
           "Independent fan website",
         ]}
+        showVisual={false}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Legal" },

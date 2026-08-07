@@ -38,6 +38,21 @@
   object-fit: cover;
   transition: transform 420ms var(--ease-out);
 }
+.noArt {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: end start;
+  padding: 18px 12px;
+  color: var(--color-muted);
+  background:
+    linear-gradient(145deg, color-mix(in oklch, var(--color-primary) 12%, transparent), transparent 60%),
+    repeating-linear-gradient(135deg, transparent 0 14px, oklch(80% 0.03 235 / 0.04) 15px 16px);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
 .card:hover .art img {
   transform: scale(1.035);
 }
@@ -170,7 +185,7 @@
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .body h3,
   .compact .body h3 {
     font-size: 0.95rem;

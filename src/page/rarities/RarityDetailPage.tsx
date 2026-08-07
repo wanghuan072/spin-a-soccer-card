@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Icon } from "@/components/common/Icon";
 import { PageHero } from "@/components/common/PageHero";
 import { StatusBadge } from "@/components/common/StatusBadge";
-import { cards, packs } from "@/lib/content";
+import { cards, packAvailabilityLabel, packs } from "@/lib/content";
 import type { Rarity } from "@/types/content";
 import styles from "@/style/page/detail/detail.module.css";
 
@@ -13,10 +13,20 @@ export function RarityDetailPage({ rarity }: { rarity: Rarity }) {
   const linkedPacks = packs.filter(
     (pack) => pack.highestRarity.toLowerCase() === rarity.name.toLowerCase(),
   );
-  const visual =
-    linkedCards[0]?.image ??
-    linkedPacks[0]?.image ??
-    "/images/video/historical-mutation-index.webp";
+  const updatePanelRarities = new Set(["bloodmoon", "limited-blackmoon"]);
+  const visual = updatePanelRarities.has(rarity.slug)
+    ? "/images/evidence/blackmoon-update-panel.webp"
+    : linkedCards[0]?.image ??
+      linkedPacks[0]?.image ??
+      "/images/evidence/current-card-inventory.webp";
+  const classification =
+    linkedCards.length && linkedPacks.length
+      ? "Card and pack relationships recorded"
+      : linkedCards.length
+        ? "Card label in the current directory"
+        : linkedPacks.length
+          ? "Pack-tier label; not automatically a card rarity"
+          : "Named game label with no exact directory link yet";
   return (
     <main id="main-content">
       <PageHero
@@ -111,6 +121,66 @@ export function RarityDetailPage({ rarity }: { rarity: Rarity }) {
           </section>
           <section>
             <div className={styles.sectionHeading}>
+              <span>04</span>
+              <div>
+                <h2>Use the {rarity.name} label without overreading it</h2>
+                <p>Card rarity, pack tier, recorded plot income and mutation are separate fields.</p>
+              </div>
+            </div>
+            <div className={styles.tableWrap}>
+              <table>
+                <tbody>
+                  <tr>
+                    <th>Directory classification</th>
+                    <td>{classification}</td>
+                  </tr>
+                  <tr>
+                    <th>Exact card matches</th>
+                    <td>
+                      {linkedCards.length
+                        ? linkedCards.map((card) => card.name).join(", ")
+                        : "None connected"}
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Exact pack matches</th>
+                    <td>
+                      {linkedPacks.length
+                        ? linkedPacks.map((pack) => pack.name).join(", ")
+                        : "None connected"}
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Recorded income range</th>
+                    <td>Not inferred from the label alone</td>
+                  </tr>
+                  <tr>
+                    <th>Drop chance</th>
+                    <td>Open the current Shop Odds panel</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <ul>
+              <li>
+                Match the exact {rarity.name} text before linking a card or pack.
+              </li>
+              <li>
+                Compare dated plot displays separately; a label does not publish
+                a fixed Cash-per-second range.
+              </li>
+              <li>
+                Check mutations after rarity because a special variant can change
+                the keep-or-sell decision.
+              </li>
+              <li>
+                Treat event and limited wording as version-bound until the current
+                Index displays the same label.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div className={styles.sectionHeading}>
               <span>03</span>
               <div>
                 <h2>Linked packs</h2>
@@ -123,7 +193,7 @@ export function RarityDetailPage({ rarity }: { rarity: Rarity }) {
                   <Link key={pack.slug} href={`/packs/${pack.slug}`}>
                     <span>{pack.name}</span>
                     <small>
-                      {pack.availability} · checked {pack.source.observedAt}
+                      {packAvailabilityLabel(pack.availability)} · checked {pack.source.observedAt}
                     </small>
                     <Icon name="arrow" size={15} />
                   </Link>

@@ -16,7 +16,7 @@ export const pageTdk = {
   cards: {
     title: "Spin a Soccer Card Cards - Details, Ratings & Index",
     description:
-      "Browse Spin a Soccer Card Cards with Spin a Soccer Card Details for ratings, positions, rarities, packs, income, availability, mutations and checked dates.",
+      "Browse Spin a Soccer Card Cards with Spin a Soccer Card Details for readable ratings, labels, dated packs, recorded plot income, mutations and game checks.",
     keywords: [
       "Spin a Soccer Card Cards",
       "Spin a Soccer Card Details",
@@ -27,7 +27,7 @@ export const pageTdk = {
   packs: {
     title: "Spin a Soccer Card Packs - Costs, Cards & Unlocks",
     description:
-      "Compare Spin a Soccer Card packs by cash cost, Robux bundle, stock, known card pulls, availability, last-checked date and current unlock requirements.",
+      "Compare Spin a Soccer Card packs using dated cash costs, Robux bundles, stock, readable pulls, game-window availability and captured unlock requirements.",
     keywords: [
       "Spin a Soccer Card Packs",
       "Spin a Soccer Card pack details",
@@ -38,7 +38,7 @@ export const pageTdk = {
   values: {
     title: "Spin a Soccer Card Value - Card Values & Trade Guide",
     description:
-      "Use the Spin a Soccer Card Value guide to compare displayed card income, dated player trades, market context and fields that remain unknown or unstable.",
+      "Use the Spin a Soccer Card Value guide to compare recorded plot income and dated player trades without treating one account display as a universal base rate.",
     keywords: [
       "Spin a Soccer Card Value",
       "Spin a Soccer Card value list",
@@ -58,9 +58,9 @@ export const pageTdk = {
     ],
   },
   codes: {
-    title: "Spin a Soccer Card Codes (August 2026) - Working & Expired",
+    title: "Spin a Soccer Card Codes (August 2026) - Redeem Guide",
     description:
-      "Redeem Spin a Soccer Card codes for free packs and spins. See working codes, try-in-game strings, step-by-step Shop redemption and the expired archive.",
+      "Check Spin a Soccer Card codes with recent field sightings, exact Shop redemption steps, conflicting reward notes and a dated expired code archive.",
     keywords: [
       "Spin a Soccer Card Codes",
       "Spin a Soccer Card Roblox codes",
@@ -137,7 +137,7 @@ export const pageTdk = {
   privacy: {
     title: "Spin a Soccer Card Wiki Privacy Policy & Data Use",
     description:
-      "Read the Spin a Soccer Card Wiki Privacy Policy covering technical data, browser tools, cookies, external services, email retention and privacy requests.",
+      "Read the Spin a Soccer Card Wiki Privacy Policy covering technical data, cookies, external services, contact email retention and individual privacy requests.",
     keywords: [
       "Spin a Soccer Card Wiki Privacy Policy",
       "Spin a Soccer Card privacy",
@@ -147,7 +147,7 @@ export const pageTdk = {
   terms: {
     title: "Spin a Soccer Card Wiki Terms of Service & Site Rules",
     description:
-      "Review the Spin a Soccer Card Wiki Terms of Service for using site content, community information, calculators, external links and game details.",
+      "Review the Spin a Soccer Card Wiki Terms of Service for using site content, community game information, external links, dated records and player guides.",
     keywords: [
       "Spin a Soccer Card Wiki Terms of Service",
       "Spin a Soccer Card site rules",

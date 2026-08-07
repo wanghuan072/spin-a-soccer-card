@@ -73,14 +73,27 @@ export function verificationLabel(status: string): string {
   const labels: Record<string, string> = {
     "official-source": "Official Roblox data",
     "gameplay-verified": "Seen in game",
-    "multi-source-reported": "Popular target",
+    "multi-source-reported": "Cross-checked report",
     "historical-record": "Older version",
     "not-confirmed": seeInGame,
     "video-verified": "Seen in Shop",
-    reported: "Try in game",
+    reported: "Awaiting a current result",
     expired: "Expired",
   };
   return labels[status] ?? status;
+}
+
+export function packAvailabilityLabel(
+  availability: SoccerPack["availability"],
+): string {
+  const labels: Record<SoccerPack["availability"], string> = {
+    "dated-shop": "Dated Shop record",
+    "dated-reward": "Dated reward record",
+    historical: "Historical rotation",
+    unknown: "Availability not established",
+  };
+
+  return labels[availability];
 }
 
 const codeStatusPriority: Record<GameCode["status"], number> = {
@@ -89,7 +102,7 @@ const codeStatusPriority: Record<GameCode["status"], number> = {
   expired: 2,
 };
 
-/** Prefer live field sightings, then try-in-game rows, then archive. */
+/** Prefer live field sightings, then unresolved rows, then archive. */
 export function sortCodesForDisplay(entries: GameCode[] = codes): GameCode[] {
   return [...entries].sort((a, b) => {
     const byStatus =

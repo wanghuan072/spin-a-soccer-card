@@ -25,7 +25,6 @@ export function AppHeader() {
             alt="Spin a Soccer Card Wiki logo"
             width={54}
             height={40}
-            priority
           />
           <span>
             <strong>SPIN A SOCCER CARD</strong>

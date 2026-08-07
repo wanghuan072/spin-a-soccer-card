@@ -10,6 +10,7 @@ export function PageHero({
   breadcrumbs,
   image,
   imageAlt = "Spin a Soccer Card gameplay artwork",
+  showVisual = true,
 }: {
   eyebrow: string;
   title: string;
@@ -18,6 +19,7 @@ export function PageHero({
   breadcrumbs: Array<{ label: string; href?: string }>;
   image?: string;
   imageAlt?: string;
+  showVisual?: boolean;
 }) {
   const visualMap: Record<string, string> = {
     "Player card database": "/images/video/scarlet-pack-session.webp",
@@ -39,7 +41,7 @@ export function PageHero({
     <header className={styles.hero}>
       <div className={`container ${styles.container}`}>
         <Breadcrumb items={breadcrumbs} />
-        <div className={styles.frame}>
+        <div className={`${styles.frame} ${showVisual ? "" : styles.frameTextOnly}`}>
           <div className={styles.copy}>
             <p className={styles.eyebrow}>
               <span>RSC</span>
@@ -48,20 +50,23 @@ export function PageHero({
             <h1>{title}</h1>
             <p className={styles.description}>{description}</p>
           </div>
-          <figure className={styles.visual}>
-            <Image
-              src={heroImage}
-              alt={imageAlt}
-              fill
-              priority
-              sizes="(max-width: 760px) 100vw, 34vw"
-            />
-            <figcaption>
-              <span>SCOUT FILE</span>
-              <b>{title.slice(0, 2).toUpperCase()}</b>
-              <small>GAME DATA / 2026</small>
-            </figcaption>
-          </figure>
+          {showVisual ? (
+            <figure className={styles.visual}>
+              <Image
+                src={heroImage}
+                alt={imageAlt}
+                fill
+                preload
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 38vw, 34vw"
+                quality={78}
+              />
+              <figcaption>
+                <span>SCOUT FILE</span>
+                <b>{title.slice(0, 2).toUpperCase()}</b>
+                <small>GAME DATA / 2026</small>
+              </figcaption>
+            </figure>
+          ) : null}
         </div>
         {meta?.length ? (
           <ol className={styles.meta}>

@@ -12,18 +12,26 @@ export function CardItem({
   card: SoccerCard;
   compact?: boolean;
 }) {
+  const hasExactCardImage =
+    !card.image.includes("/rebirth-") &&
+    !card.image.includes("/pack-alpha") &&
+    !card.imageAlt.toLowerCase().includes("context");
   return (
     <article
       className={`${styles.card} ${compact ? styles.compact : ""}`}
       data-rarity={card.rarity.toLowerCase()}
     >
       <Link className={styles.art} href={`/cards/${card.slug}`}>
-        <Image
-          src={card.image}
-          alt={card.imageAlt}
-          fill
-          sizes="(max-width: 768px) 46vw, 220px"
-        />
+        {hasExactCardImage ? (
+          <Image
+            src={card.image}
+            alt={card.imageAlt}
+            fill
+            sizes="(max-width: 768px) 46vw, 220px"
+          />
+        ) : (
+          <span className={styles.noArt}>No unique card image</span>
+        )}
         <span className={styles.rating}>{card.rating ?? "?"}</span>
         <span className={styles.rarity}>{card.rarity}</span>
       </Link>
@@ -35,8 +43,12 @@ export function CardItem({
         <p>{card.position}</p>
         <dl>
           <div>
-            <dt>Income</dt>
-            <dd>{formatNumber(card.baseIncome, "$")}</dd>
+            <dt>Recorded income</dt>
+            <dd>
+              {card.observedIncome === null
+                ? "Not captured"
+                : `${formatNumber(card.observedIncome, "$")} / sec`}
+            </dd>
           </div>
           <div>
             <dt>Value</dt>

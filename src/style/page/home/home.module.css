@@ -1363,7 +1363,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .heroTitle {
     font-size: clamp(1.5rem, 8vw, 1.95rem);
     font-style: normal;
@@ -1390,6 +1390,10 @@
   }
   .guideStrip > a:nth-child(n + 3) {
     display: none;
+  }
+  .codeRows button,
+  .panelHeading > a {
+    min-height: 44px;
   }
   .panelHeading h2 {
     font-size: 1.12rem;

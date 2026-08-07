@@ -2,7 +2,13 @@ import Link from "next/link";
 import { Icon } from "@/components/common/Icon";
 import { PageHero } from "@/components/common/PageHero";
 import { StatusBadge } from "@/components/common/StatusBadge";
-import { formatDate, packs, rebirths, verificationLabel } from "@/lib/content";
+import {
+  formatDate,
+  packAvailabilityLabel,
+  packs,
+  rebirths,
+  verificationLabel,
+} from "@/lib/content";
 import type { Rebirth } from "@/types/content";
 import styles from "@/style/page/detail/detail.module.css";
 
@@ -19,7 +25,13 @@ export function RebirthDetailPage({ rebirth }: { rebirth: Rebirth }) {
   const image =
     rebirth.level >= 2 && rebirth.level <= 5
       ? `/images/video/rebirth-${rebirth.level}-panel.webp`
-      : "/images/evidence/blackmoon-update-panel.webp";
+      : rebirth.level === 1
+        ? "/images/video/early-pack-shop.webp"
+        : rebirth.level === 18
+          ? "/images/video/summer-shop.webp"
+          : "/images/evidence/blackmoon-update-panel.webp";
+  const hasMatchingPanel =
+    (rebirth.level >= 2 && rebirth.level <= 5) || rebirth.level === 19;
   return (
     <main id="main-content">
       <PageHero
@@ -31,8 +43,9 @@ export function RebirthDetailPage({ rebirth }: { rebirth: Rebirth }) {
           `${unlockedPacks.length} linked packs`,
           `Checked ${formatDate(rebirth.source.observedAt)}`,
         ]}
-        image={image}
+        image={hasMatchingPanel ? image : undefined}
         imageAlt={`${rebirth.title} panel in Spin a Soccer Card`}
+        showVisual={hasMatchingPanel}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Rebirths", href: "/rebirths" },
@@ -111,7 +124,7 @@ export function RebirthDetailPage({ rebirth }: { rebirth: Rebirth }) {
                   <Link key={pack.slug} href={`/packs/${pack.slug}`}>
                     <span>{pack.name}</span>
                     <small>
-                      {pack.highestRarity} · {pack.availability}
+                      {pack.highestRarity} · {packAvailabilityLabel(pack.availability)}
                     </small>
                     <Icon name="arrow" size={15} />
                   </Link>

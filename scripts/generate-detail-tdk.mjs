@@ -28,7 +28,7 @@ const updateTopics = {
   "blackmoon-return-update": "Blackmoon & Rebirth 19",
   "official-trade-world": "Official Trade World",
   "update-8-admin-abuse": "Update 8 & Admin Event",
-  "summer-update-16": "Summer Update 16",
+    "july-4-summer-admin-event": "July 4 Summer Event",
   "scarlet-pack-and-blaze-storm": "Scarlet & BLAZE-STORM",
   "nightmare-late-game-snapshot": "Lucid & Nightmare",
   "trade-token-market-snapshot": "Trade Token Market",

@@ -4,7 +4,6 @@ import { PageHero } from "@/components/common/PageHero";
 import {
   cards,
   codes,
-  countByVerification,
   formatDate,
   formatNumber,
   gameSnapshot,
@@ -40,7 +39,7 @@ const videos = [
   ["Jun 20", "Best Trade", "Trade interface and value behavior", "cZXNuLYTbS4"],
   [
     "Jul 4",
-    "Summer Update 16",
+    "July 4 Summer Event",
     "Aqua, Tournament Shop and Galactic",
     "mCLA9zs7fR0",
   ],
@@ -107,7 +106,6 @@ const competitors = [
 
 export function ResearchPage() {
   const official = gameSnapshot.officialSnapshot;
-  const communityCards = countByVerification(cards, "multi-source-reported");
   const tryCodes = codes.filter((entry) => entry.status === "reported").length;
   const expiredCodes = codes.filter(
     (entry) => entry.status === "expired",
@@ -202,18 +200,21 @@ export function ResearchPage() {
             <article>
               <strong>Cards</strong>
               <b>{cards.length}</b>
-              <p>{communityCards} popular player targets.</p>
+              <p>
+                Official and dated gameplay records; 1,300 Index slots were
+                visible on August 3.
+              </p>
             </article>
             <article>
               <strong>Packs</strong>
               <b>{packs.length}</b>
-              <p>Current Shop rows plus dated archive.</p>
+              <p>Dated Shop/reward rows plus historical records.</p>
             </article>
             <article>
               <strong>Codes</strong>
               <b>{codes.length}</b>
               <p>
-                {tryCodes} try-in-game · {expiredCodes} archive.
+                {tryCodes} unresolved · {expiredCodes} archive.
               </p>
             </article>
             <article>
@@ -309,15 +310,17 @@ export function ResearchPage() {
             <article>
               <h3>Card totals</h3>
               <p>
-                An April Index showed 1,199 slots; no current public roster API
-                exists.
+                An April Index showed 1,199 slots and an August 3 inventory
+                showed 1,300. No public roster API exposes every card record.
               </p>
             </article>
             <article>
               <h3>Code status</h3>
               <p>
-                August trackers still disagree on OWL-HAPPY, BIGUPDATECOMING
-                and DRAGON-PRIME, so those rows stay try-in-game.
+                A minority August tracker still lists OWL-HAPPY,
+                BIGUPDATECOMING and DRAGON-PRIME, but the newer majority places
+                them in expired lists. They remain archived until a fresh
+                successful redemption is captured.
               </p>
             </article>
             <article>

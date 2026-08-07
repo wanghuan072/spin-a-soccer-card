@@ -32,7 +32,7 @@ export interface SoccerCard {
   packSlug: string | null;
   image: string;
   imageAlt: string;
-  baseIncome: number | null;
+  observedIncome: number | null;
   tradeValue: number | null;
   previousValue: number | null;
   valueTrend: ValueTrend;
@@ -66,7 +66,11 @@ export interface SoccerPack {
   description: string;
   order: number;
   verificationStatus: VerificationStatus;
-  availability: "current-shop" | "current-reward" | "historical" | "unknown";
+  availability:
+    | "dated-shop"
+    | "dated-reward"
+    | "historical"
+    | "unknown";
   stockPerRefresh: number | null;
   bundleCost: number | null;
   bundleQuantity: number | null;

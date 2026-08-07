@@ -67,15 +67,15 @@
 .introFigure {
   position: relative;
   overflow: hidden;
-  min-height: 240px;
+  min-height: 360px;
   border: 1px solid var(--color-border-soft);
   border-radius: 12px;
   background: var(--color-bg-deep);
 }
 
 .introFigure img {
-  object-fit: cover;
-  object-position: center top;
+  padding: 18px;
+  object-fit: contain;
 }
 
 .introFigure figcaption {
@@ -125,6 +125,7 @@
 
 .workingCard {
   display: grid;
+  grid-template-rows: minmax(250px, auto) 1fr;
   overflow: hidden;
   border: 1px solid oklch(55% 0.12 145);
   border-radius: 14px;
@@ -132,15 +133,45 @@
   box-shadow: 0 10px 28px oklch(6% 0.03 248 / 0.35);
 }
 
-.workingMedia {
+.codeVisual {
   position: relative;
-  min-height: 210px;
-  background: oklch(12% 0.03 250);
+  display: grid;
+  min-height: 250px;
+  overflow: hidden;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  padding: 20px;
+  color: var(--color-primary);
+  background:
+    linear-gradient(135deg, color-mix(in oklch, var(--color-primary) 12%, transparent), transparent 60%),
+    var(--color-bg-deep);
 }
 
-.workingMedia img {
-  object-fit: cover;
-  object-position: center;
+.codeVisual::after {
+  position: absolute;
+  inset: 55% 0 0;
+  background: linear-gradient(transparent, oklch(8% 0.035 247 / 0.94));
+  content: "";
+  pointer-events: none;
+}
+
+.codeVisual img {
+  padding: 12px;
+  object-fit: contain;
+}
+
+.codeVisual span {
+  position: absolute;
+  z-index: 1;
+  right: 18px;
+  bottom: 14px;
+  left: 18px;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2vw, 1.4rem);
+  text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .workingBody {
@@ -205,27 +236,13 @@
 
 .tryCard {
   display: grid;
-  grid-template-columns: 120px minmax(140px, 0.4fr) minmax(0, 1fr) auto;
+  grid-template-columns: minmax(140px, 0.4fr) minmax(0, 1fr) auto;
   align-items: center;
   gap: 14px;
   padding: 14px 16px;
   border: 1px solid var(--color-border);
   border-radius: 12px;
   background: var(--color-panel);
-}
-
-.tryShot {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  min-height: 84px;
-  border: 1px solid var(--color-border-soft);
-  border-radius: 8px;
-  background: var(--color-bg-deep);
-}
-
-.tryShot img {
-  object-fit: cover;
 }
 
 .expiredCard {
@@ -266,6 +283,21 @@
   font-size: 0.78rem;
 }
 
+.tryCard > button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  gap: 7px;
+  border: 1px solid var(--color-primary);
+  border-radius: 7px;
+  color: oklch(12% 0.04 140);
+  background: var(--color-primary);
+  font: 850 0.8rem var(--font-body);
+  cursor: pointer;
+}
+
 .redeem {
   display: grid;
   gap: 16px;
@@ -273,39 +305,75 @@
 
 .redeemSteps {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
-  counter-reset: redeem;
 }
 
 .redeemSteps li {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 160px;
-  gap: 12px;
-  align-items: stretch;
-  min-height: 150px;
-  padding: 14px;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.5fr);
+  grid-template-rows: minmax(320px, auto);
+  overflow: hidden;
+  min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: 12px;
   background: var(--color-panel);
-  counter-increment: redeem;
+}
+
+.redeemPrerequisite {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 20px;
+  border-block: 1px solid color-mix(in oklch, var(--color-border) 75%, var(--color-primary));
+  background: color-mix(in oklch, var(--color-panel) 88%, var(--color-primary));
+}
+
+.redeemPrerequisite > span {
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font: italic 900 1.35rem var(--font-display);
+}
+
+.redeemPrerequisite > div {
+  display: grid;
+  gap: 5px;
+}
+
+.redeemPrerequisite strong {
+  font-size: 1.05rem;
+}
+
+.redeemPrerequisite p,
+.redeemPrerequisite small {
+  color: var(--color-muted);
+}
+
+.redeemPrerequisite p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.redeemPrerequisite small {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .redeemCopy {
   display: grid;
   align-content: start;
   gap: 8px;
-}
-
-.redeemCopy::before {
-  color: var(--color-primary);
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 900;
-  content: "0" counter(redeem);
+  padding: 18px;
 }
 
 .redeemCopy strong {
@@ -321,14 +389,29 @@
 .redeemShot {
   position: relative;
   overflow: hidden;
-  min-height: 120px;
-  border: 1px solid var(--color-border-soft);
-  border-radius: 8px;
+  min-height: 320px;
+  border-right: 1px solid var(--color-border-soft);
   background: var(--color-bg-deep);
 }
 
 .redeemShot img {
-  object-fit: cover;
+  padding: 12px;
+  object-fit: contain;
+}
+
+.redeemShot > span {
+  position: absolute;
+  z-index: 1;
+  top: 14px;
+  left: 14px;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: oklch(10% 0.035 247 / 0.9);
+  font: italic 900 1.05rem var(--font-display);
 }
 
 .successNote {
@@ -345,13 +428,14 @@
 .successNote figure {
   position: relative;
   overflow: hidden;
-  min-height: 180px;
+  min-height: 300px;
   border-radius: 8px;
   background: var(--color-bg-deep);
 }
 
 .successNote img {
-  object-fit: cover;
+  padding: 12px;
+  object-fit: contain;
 }
 
 .successNote h3 {
@@ -408,7 +492,7 @@
   font-weight: 800;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .intro,
   .workingGrid,
   .redeemSteps,
@@ -422,20 +506,22 @@
     grid-template-columns: 1fr;
   }
 
-  .tryShot {
-    min-height: 140px;
-  }
-
   .expiredCard span {
     text-align: left;
   }
 
+  .redeemSteps {
+    gap: 16px;
+  }
+
   .redeemSteps li {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    grid-template-rows: minmax(280px, auto);
   }
 
   .redeemShot {
-    min-height: 160px;
+    min-height: 280px;
+    border-right: 1px solid var(--color-border-soft);
   }
 }
 
@@ -458,18 +544,56 @@
   .faq article {
     padding: 14px;
   }
+
+  .introFigure {
+    min-height: 270px;
+  }
+
+  .workingCard {
+    grid-template-rows: minmax(220px, auto) 1fr;
+  }
+
+  .codeVisual {
+    min-height: 220px;
+  }
+
+  .redeemPrerequisite {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 12px;
+    padding-inline: 12px;
+  }
+
+  .redeemPrerequisite > span {
+    width: 48px;
+    height: 48px;
+  }
+
+  .redeemPrerequisite small {
+    grid-column: 2;
+  }
+
+  .redeemSteps li {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .redeemShot {
+    min-height: 240px;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+
+  .successNote figure {
+    min-height: 240px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .introPoints li {
     font-size: 0.9rem;
   }
 
-  .workingMedia {
-    min-height: 160px;
-  }
-
-  .redeemCopy::before {
-    font-size: 1.1rem;
+  .tryCard > button {
+    width: 100%;
   }
 }

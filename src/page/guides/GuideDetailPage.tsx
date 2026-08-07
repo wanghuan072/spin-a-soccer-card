@@ -8,167 +8,167 @@ import type { Guide } from "@/types/content";
 import styles from "@/style/page/detail/detail.module.css";
 
 export function GuideDetailPage({ guide }: { guide: Guide }) {
-  const related = guides
-    .filter((item) => item.slug !== guide.slug)
-    .slice(0, 3);
-  const totalChecks =
-    guide.sections.length + guide.tips.length + guide.mistakes.length;
+  const related = guides.find((item) => item.slug !== guide.slug);
+  const totalChecks = guide.tips.length + guide.mistakes.length;
+
   return (
     <main id="main-content">
       <JsonLd data={faqSchema(guide.faq)} />
       <PageHero
-        eyebrow={`${guide.category} field manual`}
+        eyebrow={`${guide.category} player manual`}
         title={guide.title}
-        description={guide.seo.description}
+        description={guide.summary}
         meta={[
           guide.readTime,
-          `${guide.sections.length} guide sections`,
-          `${totalChecks} action points`,
+          `${guide.sections.length} practical chapters`,
+          `Game window ${formatDate(guide.source.observedAt)}`,
         ]}
         image={guide.image}
-        imageAlt={`Gameplay image for ${guide.title}`}
+        imageAlt={`In-game view for ${guide.title}`}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Guides", href: "/guides" },
           { label: guide.title },
         ]}
       />
-      <div className={`container ${styles.content}`}>
-        <article className={styles.article}>
-          <section>
-            <div className={styles.metricRow}>
-              <article>
-                <span>Page updated</span>
-                <strong>{formatDate(guide.lastReviewedAt)}</strong>
-                <small>Latest wording and link check</small>
-              </article>
-              <article>
-                <span>Game date</span>
-                <strong>{formatDate(guide.source.observedAt)}</strong>
-                <small>Game version covered here</small>
-              </article>
-              <article>
-                <span>Action points</span>
-                <strong>{totalChecks}</strong>
-                <small>Sections, tips and mistakes</small>
-              </article>
-            </div>
-            <nav className={styles.toc} aria-label="Guide contents">
-              <strong>Complete guide contents</strong>
-              {guide.sections.map((section, index) => (
-                <a key={section.heading} href={`#step-${index + 1}`}>
-                  {String(index + 1).padStart(2, "0")} · {section.heading}
-                </a>
-              ))}
-              <a href="#player-tips">Tips checklist</a>
-              <a href="#guide-faq">Direct answers</a>
-            </nav>
-            <div className={styles.note}>
-              <strong>Check the current menu before spending</strong>
+
+      <div className={`container ${styles.guideLayout}`}>
+        <article className={styles.guideArticle}>
+          <header className={styles.guideOpening}>
+            <div>
+              <p className={styles.kicker}>Player route · read in order</p>
+              <h2>Turn the game loop into your next move</h2>
               <p>
-                Prices, stock, requirements and event access can change between
-                game updates. Match these steps to the live Shop and Index in
-                your server.
+                This manual is built around decisions you make inside the live
+                game: what to inspect, what to keep and what to postpone. Menu
+                labels are tied to the dated game window above, so a changed
+                Shop or Rebirth panel should always take priority.
               </p>
             </div>
-          </section>
-          {guide.sections.map((section, index) => (
-            <section id={`step-${index + 1}`} key={section.heading}>
-              <div className={styles.sectionHeading}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-                <div>
-                  <h2>{section.heading}</h2>
-                </div>
+            <dl className={styles.guideBrief}>
+              <div>
+                <dt>Chapters</dt>
+                <dd>{guide.sections.length}</dd>
               </div>
-              <div
-                className={
-                  section.image ? styles.guideStep : styles.guideStepText
-                }
+              <div>
+                <dt>Checks</dt>
+                <dd>{totalChecks}</dd>
+              </div>
+              <div>
+                <dt>Page review</dt>
+                <dd>{formatDate(guide.lastReviewedAt)}</dd>
+              </div>
+            </dl>
+          </header>
+
+          <nav className={styles.guideRoute} aria-label="Guide chapters">
+            <p>Route card</p>
+            <ol>
+              {guide.sections.map((section, index) => (
+                <li key={section.heading}>
+                  <a href={`#chapter-${index + 1}`}>
+                    <span>{String(index + 1).padStart(2, "0")}</span>
+                    {section.heading}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
+          <div className={styles.guideChapters}>
+            {guide.sections.map((section, index) => (
+              <section
+                id={`chapter-${index + 1}`}
+                className={`${styles.guideChapter} ${
+                  index % 2 === 1 ? styles.guideChapterFlip : ""
+                }`}
+                key={section.heading}
               >
-                <p>{section.body}</p>
+                <div className={styles.chapterNumber} aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </div>
+                <div className={styles.chapterCopy}>
+                  <p className={styles.kicker}>On-field decision</p>
+                  <h2>{section.heading}</h2>
+                  <p>{section.body}</p>
+                </div>
                 {section.image ? (
                   <figure className={styles.guideFigure}>
                     <Image
                       src={section.image}
                       alt={section.imageAlt ?? section.heading}
                       fill
-                      sizes="(max-width: 768px) 100vw, 360px"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 42vw, 390px"
+                      quality={78}
                     />
                     {section.imageAlt ? (
                       <figcaption>{section.imageAlt}</figcaption>
                     ) : null}
                   </figure>
                 ) : null}
-              </div>
-            </section>
-          ))}
-          <section id="player-tips">
-            <div className={styles.sectionHeading}>
-              <span>+</span>
-              <div>
-                <h2>Player checklist</h2>
-                <p>Useful actions and failure patterns shown together.</p>
-              </div>
-            </div>
-            <div className={styles.split}>
-              <div>
-                <h3>Do this</h3>
-                <ul>
+              </section>
+            ))}
+          </div>
+
+          <section id="player-checklist" className={styles.decisionBoard}>
+            <header>
+              <p className={styles.kicker}>Before the next pack or reset</p>
+              <h2>Player decision board</h2>
+              <p>
+                The left column protects progress. The right column catches
+                the mistakes that most often waste Cash, cards or fresh codes.
+              </p>
+            </header>
+            <div>
+              <section>
+                <h3>Make these checks</h3>
+                <ol>
                   {guide.tips.map((tip) => (
                     <li key={tip}>{tip}</li>
                   ))}
-                </ul>
-              </div>
-              <div>
-                <h3>Avoid this</h3>
-                <ul>
+                </ol>
+              </section>
+              <section>
+                <h3>Do not spend around these</h3>
+                <ol>
                   {guide.mistakes.map((mistake) => (
                     <li key={mistake}>{mistake}</li>
                   ))}
-                </ul>
-              </div>
+                </ol>
+              </section>
             </div>
           </section>
-          <section id="guide-faq" className={styles.faq}>
-            <div className={styles.sectionHeading}>
-              <span>?</span>
+
+          <section id="guide-answers" className={styles.guideAnswers}>
+            <header>
+              <p className={styles.kicker}>Common player decisions</p>
+              <h2>{guide.title} questions</h2>
+              <p>Every answer stays open on the page for quick scanning.</p>
+            </header>
+            <div>
+              {guide.faq.map((faq, index) => (
+                <article key={faq.question}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <h3>{faq.question}</h3>
+                  <p>{faq.answer}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {related ? (
+            <aside className={styles.nextGuide}>
               <div>
-                <h2>Direct answers</h2>
-                <p>
-                  All answers are visible—nothing is hidden behind an accordion.
-                </p>
+                <p className={styles.kicker}>Continue your route</p>
+                <h2>{related.title}</h2>
+                <p>{related.summary}</p>
               </div>
-            </div>
-            {guide.faq.map((faq) => (
-              <article className={styles.faqItem} key={faq.question}>
-                <h3>{faq.question}</h3>
-                <p>{faq.answer}</p>
-              </article>
-            ))}
-          </section>
-        </article>
-        <aside className={styles.sidebar}>
-          <section className={styles.sidebarLead}>
-            <span>{guide.sections.length}</span>
-            <h2>Guide sections</h2>
-            <p>{guide.category} manual with practical, version-aware steps.</p>
-          </section>
-          {related.length ? (
-            <section>
-              <h2>Also read</h2>
-              <ul>
-                {related.map((item) => (
-                  <li key={item.slug}>
-                    <Link href={`/guides/${item.slug}`}>
-                      {item.title}
-                      <Icon name="arrow" size={15} />
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
+              <Link href={`/guides/${related.slug}`}>
+                Open next guide <Icon name="arrow" size={17} />
+              </Link>
+            </aside>
           ) : null}
-        </aside>
+        </article>
       </div>
     </main>
   );

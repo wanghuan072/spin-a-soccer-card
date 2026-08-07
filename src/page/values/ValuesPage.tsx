@@ -12,6 +12,10 @@ import { pageTdk } from "@/seo/tdk";
 import styles from "@/style/page/directory/directory.module.css";
 
 export function ValuesPage() {
+  const cardsWithRecordedIncome = cards.filter(
+    (card) => card.observedIncome !== null || card.tradeValue !== null,
+  );
+
   return (
     <main id="main-content">
       <PageHero
@@ -19,9 +23,9 @@ export function ValuesPage() {
         title="Spin a Soccer Card Value - Card Values & Trade Guide"
         description={pageTdk.values.description}
         meta={[
-          "Last reviewed Aug 4, 2026",
+          "Last reviewed Aug 7, 2026",
           `${tradeObservations.length} dated transactions`,
-          "Blank values are intentional",
+          `${cardsWithRecordedIncome.length} recorded income displays`,
         ]}
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "Values" }]}
       />
@@ -40,14 +44,15 @@ export function ValuesPage() {
             <div>
               <h2>Spin a Soccer Card value list</h2>
               <p>
-                Income appears only where a current plot label was readable. No
-                value, previous value or trend is generated from artwork or
-                rarity.
+                This table preserves dated game and trade displays; it is not an official price list.
+                Plot income appears only where the exact on-screen number was
+                readable, and it may include mutations or account boosts. No
+                market value or trend is generated from artwork or rarity.
               </p>
             </div>
             <Link href="/cards">Open all card details</Link>
           </div>
-          <ValueTable cards={cards} />
+          <ValueTable cards={cardsWithRecordedIncome} />
         </section>
 
         <section className={styles.section} id="trade-history">
