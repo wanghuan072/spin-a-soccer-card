@@ -45,7 +45,7 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
             ? "Older pack record"
             : "Pack shop record"
         }
-        title={`Spin a Soccer Card ${pack.name} - Cost, Cards & Requirements`}
+        title={pack.name}
         description={pack.description}
         meta={[
           versionLabel,
@@ -80,7 +80,7 @@ export function PackDetailPage({ pack }: { pack: SoccerPack }) {
             <div className={styles.facts}>
               <StatusBadge status={pack.verificationStatus} />
               <p className={styles.kicker}>{versionLabel}</p>
-              <h2>{pack.name} data</h2>
+              <h2>Pack pricing and availability</h2>
 
               <div className={styles.topMetrics}>
                 <article>

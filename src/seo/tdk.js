@@ -27,9 +27,9 @@ export const pageTdk = {
   packs: {
     title: "Spin a Soccer Card Packs - Costs, Cards & Unlocks",
     description:
-      "Compare Spin a Soccer Card packs using dated cash costs, Robux bundles, stock, readable pulls, game-window availability and captured unlock requirements.",
+      "Find the most complete Spin a Soccer Card Pack directory with dated prices, Robux bundles, stock, unlock requirements, known pulls and availability checks.",
     keywords: [
-      "Spin a Soccer Card Packs",
+      "Spin a Soccer Card Pack",
       "Spin a Soccer Card pack details",
       "Spin a Soccer Card pack costs",
       "Spin a Soccer Card pack cards",

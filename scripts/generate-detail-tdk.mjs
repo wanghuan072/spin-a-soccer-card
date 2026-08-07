@@ -53,12 +53,12 @@ const builders = {
     );
   },
   packs: (item) => {
-    const primary = `${item.name} Details`;
+    const primary = "Spin a Soccer Card Pack";
     return seo(
-      `${primary} - Spin a Soccer Card Packs`,
-      `${primary} cover cost, stock, unlocks, known cards, availability and bundles in this Spin a Soccer Card Packs guide with a checked game date.`,
+      `${item.name} - Spin a Soccer Card Pack Guide`,
+      `${item.name} is covered in this Spin a Soccer Card Pack guide with dated cost, Robux bundles, stock, unlock requirements, readable cards and availability.`,
       primary,
-      ["Spin a Soccer Card Packs", `Spin a Soccer Card ${item.name}`, `${item.name} cards`],
+      [`${item.name} details`, `Spin a Soccer Card ${item.name}`, `${item.name} cards`],
     );
   },
   guides: (item) => {
