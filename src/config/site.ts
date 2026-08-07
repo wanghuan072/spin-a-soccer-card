@@ -8,7 +8,7 @@ export const siteConfig = {
     "A player-focused Spin a Soccer Card wiki with cards, pack prices, codes, values, mutations, rebirths and practical guides.",
   url: siteShared.url,
   socialImage: siteShared.socialImage,
-  contactEmail: "wyong@gothic1remake.com",
+  contactEmail: "wyong@spinasoccercard.com",
   robloxUrl: "https://www.roblox.com/games/112490729816320/Spin-a-Soccer-Card",
   gameUniverseId: "9272693470",
   dataSnapshot: "2026-08-06",

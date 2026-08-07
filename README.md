@@ -30,4 +30,4 @@ npm run start
 
 ## Before publishing
 
-Replace `https://example.com` and `wyong@example.com` in `src/config/site.ts`. Recheck dated gameplay records against the current live game before changing them to official-source status or publishing odds, values or availability claims.
+The production domain is `https://spinasoccercard.com`, and the public contact address is `wyong@spinasoccercard.com`. Recheck dated gameplay records against the current live game before changing them to official-source status or publishing odds, values or availability claims.
