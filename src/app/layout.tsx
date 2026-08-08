@@ -45,17 +45,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
           <AppFooter />
         </div>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-1PXB22VRG3"
-          strategy="afterInteractive"
-        />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1PXB22VRG3');
+            setTimeout(function () {
+              var script = document.createElement('script');
+              script.async = true;
+              script.src = 'https://www.googletagmanager.com/gtag/js?id=G-1PXB22VRG3';
+              document.head.appendChild(script);
+
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1PXB22VRG3');
+            }, 3000);
           `}
         </Script>
       </body>
